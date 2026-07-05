@@ -1,0 +1,3396 @@
+{
+ "generated": "2026-07-05T07:01:40.244064+00:00",
+ "total": 3843,
+ "open": 1452,
+ "closed": 2391,
+ "age_buckets": {
+  "< 1 month": 123,
+  "1-3 months": 222,
+  "3-6 months": 272,
+  "6-12 months": 284,
+  "over 1 year": 551
+ },
+ "median_days_to_close": 12,
+ "categories": [
+  {
+   "category": "Carriageway pothole",
+   "open": 179,
+   "closed": 465,
+   "total": 644,
+   "median_open_age_days": 124
+  },
+  {
+   "category": "Other Highways issue",
+   "open": 165,
+   "closed": 167,
+   "total": 332,
+   "median_open_age_days": 389
+  },
+  {
+   "category": "Drain blocked",
+   "open": 108,
+   "closed": 114,
+   "total": 222,
+   "median_open_age_days": 252.5
+  },
+  {
+   "category": "Litter Bin - Overflowing",
+   "open": 89,
+   "closed": 27,
+   "total": 116,
+   "median_open_age_days": 94
+  },
+  {
+   "category": "Fly Tipping",
+   "open": 79,
+   "closed": 243,
+   "total": 322,
+   "median_open_age_days": 303
+  },
+  {
+   "category": "Overgrown Trees/Hedges",
+   "open": 75,
+   "closed": 90,
+   "total": 165,
+   "median_open_age_days": 350
+  },
+  {
+   "category": "Carriageway surface problem",
+   "open": 71,
+   "closed": 136,
+   "total": 207,
+   "median_open_age_days": 162
+  },
+  {
+   "category": "Grass cutting problem",
+   "open": 52,
+   "closed": 12,
+   "total": 64,
+   "median_open_age_days": 30.5
+  },
+  {
+   "category": "Sign missing/defective",
+   "open": 38,
+   "closed": 34,
+   "total": 72,
+   "median_open_age_days": 534.0
+  },
+  {
+   "category": "Standing water on the highway",
+   "open": 35,
+   "closed": 37,
+   "total": 72,
+   "median_open_age_days": 232
+  },
+  {
+   "category": "Other Street Cleaning",
+   "open": 27,
+   "closed": 21,
+   "total": 48,
+   "median_open_age_days": 111
+  },
+  {
+   "category": "Footway surface problem",
+   "open": 26,
+   "closed": 51,
+   "total": 77,
+   "median_open_age_days": 348.5
+  },
+  {
+   "category": "Street Light Out",
+   "open": 25,
+   "closed": 118,
+   "total": 143,
+   "median_open_age_days": 494
+  },
+  {
+   "category": "Tree problem on an open space",
+   "open": 25,
+   "closed": 18,
+   "total": 43,
+   "median_open_age_days": 322
+  },
+  {
+   "category": "Flood",
+   "open": 21,
+   "closed": 41,
+   "total": 62,
+   "median_open_age_days": 235
+  },
+  {
+   "category": "Tree/Grass/Shrub Problem on a highway/verge",
+   "open": 20,
+   "closed": 44,
+   "total": 64,
+   "median_open_age_days": 408.0
+  },
+  {
+   "category": "Cultivating or Planting on a Verge",
+   "open": 19,
+   "closed": 19,
+   "total": 38,
+   "median_open_age_days": 93
+  },
+  {
+   "category": "Abandoned vehicle",
+   "open": 18,
+   "closed": 42,
+   "total": 60,
+   "median_open_age_days": 295.5
+  },
+  {
+   "category": "Litter bin problem",
+   "open": 18,
+   "closed": 17,
+   "total": 35,
+   "median_open_age_days": 287.0
+  },
+  {
+   "category": "Salt bins replenish",
+   "open": 17,
+   "closed": 62,
+   "total": 79,
+   "median_open_age_days": 181
+  },
+  {
+   "category": "Markings missing/defective",
+   "open": 16,
+   "closed": 5,
+   "total": 21,
+   "median_open_age_days": 155.0
+  },
+  {
+   "category": "Litter",
+   "open": 15,
+   "closed": 27,
+   "total": 42,
+   "median_open_age_days": 246
+  },
+  {
+   "category": "Other Traffic Signals issue",
+   "open": 14,
+   "closed": 14,
+   "total": 28,
+   "median_open_age_days": 439.0
+  },
+  {
+   "category": "Footway pothole",
+   "open": 13,
+   "closed": 37,
+   "total": 50,
+   "median_open_age_days": 162
+  },
+  {
+   "category": "Encroachment of the Highways by Trees or Shrubs",
+   "open": 13,
+   "closed": 40,
+   "total": 53,
+   "median_open_age_days": 351
+  },
+  {
+   "category": "Verge/Visibility problem",
+   "open": 12,
+   "closed": 10,
+   "total": 22,
+   "median_open_age_days": 243.5
+  },
+  {
+   "category": "Sign obscured",
+   "open": 12,
+   "closed": 9,
+   "total": 21,
+   "median_open_age_days": 293.5
+  },
+  {
+   "category": "Street name plate problem",
+   "open": 11,
+   "closed": 9,
+   "total": 20,
+   "median_open_age_days": 261
+  },
+  {
+   "category": "Bollard missing/defective",
+   "open": 11,
+   "closed": 7,
+   "total": 18,
+   "median_open_age_days": 336
+  },
+  {
+   "category": "Leaf clearance",
+   "open": 11,
+   "closed": 21,
+   "total": 32,
+   "median_open_age_days": 561
+  },
+  {
+   "category": "Dead animal",
+   "open": 10,
+   "closed": 9,
+   "total": 19,
+   "median_open_age_days": 315.5
+  },
+  {
+   "category": "Ditch blocked",
+   "open": 10,
+   "closed": 4,
+   "total": 14,
+   "median_open_age_days": 362.0
+  },
+  {
+   "category": "Dog fouling",
+   "open": 9,
+   "closed": 17,
+   "total": 26,
+   "median_open_age_days": 495
+  },
+  {
+   "category": "Salt bins new",
+   "open": 9,
+   "closed": 41,
+   "total": 50,
+   "median_open_age_days": 180
+  },
+  {
+   "category": "Grass problem",
+   "open": 7,
+   "closed": 6,
+   "total": 13,
+   "median_open_age_days": 504
+  },
+  {
+   "category": "Lamp(s) out",
+   "open": 7,
+   "closed": 6,
+   "total": 13,
+   "median_open_age_days": 436
+  },
+  {
+   "category": "Kerb problem",
+   "open": 7,
+   "closed": 18,
+   "total": 25,
+   "median_open_age_days": 95
+  },
+  {
+   "category": "Ironwork defective",
+   "open": 7,
+   "closed": 24,
+   "total": 31,
+   "median_open_age_days": 488
+  },
+  {
+   "category": "Illuminated Sign Out",
+   "open": 7,
+   "closed": 25,
+   "total": 32,
+   "median_open_age_days": 166
+  },
+  {
+   "category": "Loose chippings/debris in c/w",
+   "open": 7,
+   "closed": 12,
+   "total": 19,
+   "median_open_age_days": 284
+  },
+  {
+   "category": "Property flooding issue",
+   "open": 7,
+   "closed": 6,
+   "total": 13,
+   "median_open_age_days": 574
+  },
+  {
+   "category": "Flood water that has run off Land",
+   "open": 6,
+   "closed": 5,
+   "total": 11,
+   "median_open_age_days": 595.0
+  },
+  {
+   "category": "Highway Boundary Query",
+   "open": 6,
+   "closed": 2,
+   "total": 8,
+   "median_open_age_days": 407.0
+  },
+  {
+   "category": "Overgrown weeds/vegetation from neighbouring property",
+   "open": 6,
+   "closed": 1,
+   "total": 7,
+   "median_open_age_days": 352.0
+  },
+  {
+   "category": "Barrier pedestrian defective",
+   "open": 6,
+   "closed": 8,
+   "total": 14,
+   "median_open_age_days": 330.5
+  },
+  {
+   "category": "Broken glass",
+   "open": 6,
+   "closed": 2,
+   "total": 8,
+   "median_open_age_days": 242.5
+  },
+  {
+   "category": "Play equipment issue",
+   "open": 5,
+   "closed": 8,
+   "total": 13,
+   "median_open_age_days": 662
+  },
+  {
+   "category": "Treatment request carriageway",
+   "open": 5,
+   "closed": 18,
+   "total": 23,
+   "median_open_age_days": 180
+  },
+  {
+   "category": "Mud on the Highway",
+   "open": 5,
+   "closed": 5,
+   "total": 10,
+   "median_open_age_days": 148
+  },
+  {
+   "category": "Flower/Shrubs bed problem",
+   "open": 4,
+   "closed": 8,
+   "total": 12,
+   "median_open_age_days": 698.5
+  },
+  {
+   "category": "Ironwork high/low",
+   "open": 4,
+   "closed": 9,
+   "total": 13,
+   "median_open_age_days": 550.5
+  },
+  {
+   "category": "Street Lighting Other",
+   "open": 4,
+   "closed": 11,
+   "total": 15,
+   "median_open_age_days": 612.0
+  },
+  {
+   "category": "Illuminated Bollard Out",
+   "open": 4,
+   "closed": 1,
+   "total": 5,
+   "median_open_age_days": 112.0
+  },
+  {
+   "category": "Damaged equipment",
+   "open": 4,
+   "closed": 6,
+   "total": 10,
+   "median_open_age_days": 509.0
+  },
+  {
+   "category": "Watercourse",
+   "open": 4,
+   "closed": 8,
+   "total": 12,
+   "median_open_age_days": 383.5
+  },
+  {
+   "category": "Street Light Day Burning",
+   "open": 4,
+   "closed": 17,
+   "total": 21,
+   "median_open_age_days": 439.0
+  },
+  {
+   "category": "Dangerous Tree",
+   "open": 3,
+   "closed": 10,
+   "total": 13,
+   "median_open_age_days": 176
+  },
+  {
+   "category": "RTC Attendance",
+   "open": 3,
+   "closed": 6,
+   "total": 9,
+   "median_open_age_days": 565
+  },
+  {
+   "category": "Graffiti",
+   "open": 3,
+   "closed": 7,
+   "total": 10,
+   "median_open_age_days": 253
+  },
+  {
+   "category": "Total failure",
+   "open": 3,
+   "closed": 8,
+   "total": 11,
+   "median_open_age_days": 53
+  },
+  {
+   "category": "Urination",
+   "open": 3,
+   "closed": 0,
+   "total": 3,
+   "median_open_age_days": 72
+  },
+  {
+   "category": "Illuminated Sign Damaged",
+   "open": 3,
+   "closed": 4,
+   "total": 7,
+   "median_open_age_days": 398
+  },
+  {
+   "category": "Other winter maintenance",
+   "open": 3,
+   "closed": 6,
+   "total": 9,
+   "median_open_age_days": 515
+  },
+  {
+   "category": "Other Structure",
+   "open": 3,
+   "closed": 3,
+   "total": 6,
+   "median_open_age_days": 411
+  },
+  {
+   "category": "Treatment request footway",
+   "open": 3,
+   "closed": 9,
+   "total": 12,
+   "median_open_age_days": 178
+  },
+  {
+   "category": "Stones/Bollards on the Verge",
+   "open": 3,
+   "closed": 3,
+   "total": 6,
+   "median_open_age_days": 510
+  },
+  {
+   "category": "Street Furniture",
+   "open": 2,
+   "closed": 2,
+   "total": 4,
+   "median_open_age_days": 686.0
+  },
+  {
+   "category": "Street Light Flash/Flickering",
+   "open": 2,
+   "closed": 9,
+   "total": 11,
+   "median_open_age_days": 647.0
+  },
+  {
+   "category": "Zebra Crossing Light Out",
+   "open": 2,
+   "closed": 0,
+   "total": 2,
+   "median_open_age_days": 524.0
+  },
+  {
+   "category": "Temporary Traffic Light Fault",
+   "open": 2,
+   "closed": 27,
+   "total": 29,
+   "median_open_age_days": 460.5
+  },
+  {
+   "category": "Fuel Spillage",
+   "open": 2,
+   "closed": 6,
+   "total": 8,
+   "median_open_age_days": 272.5
+  },
+  {
+   "category": "Bridge",
+   "open": 2,
+   "closed": 2,
+   "total": 4,
+   "median_open_age_days": 358.0
+  },
+  {
+   "category": "Barrier vehicular defective",
+   "open": 2,
+   "closed": 4,
+   "total": 6,
+   "median_open_age_days": 281.5
+  },
+  {
+   "category": "Dog stray",
+   "open": 1,
+   "closed": 7,
+   "total": 8,
+   "median_open_age_days": 95
+  },
+  {
+   "category": "Paths in open spaces",
+   "open": 1,
+   "closed": 0,
+   "total": 1,
+   "median_open_age_days": 703
+  },
+  {
+   "category": "Graffiti (Offensive)",
+   "open": 1,
+   "closed": 3,
+   "total": 4,
+   "median_open_age_days": 31
+  },
+  {
+   "category": "Syringes / Drug related litter",
+   "open": 1,
+   "closed": 0,
+   "total": 1,
+   "median_open_age_days": 695
+  },
+  {
+   "category": "Street Light Damaged",
+   "open": 1,
+   "closed": 14,
+   "total": 15,
+   "median_open_age_days": 7
+  },
+  {
+   "category": "Standing water on land",
+   "open": 1,
+   "closed": 2,
+   "total": 3,
+   "median_open_age_days": 250
+  },
+  {
+   "category": "Street Light Burning Red",
+   "open": 1,
+   "closed": 0,
+   "total": 1,
+   "median_open_age_days": 573
+  },
+  {
+   "category": "Salt / Grit Bin Damaged",
+   "open": 1,
+   "closed": 10,
+   "total": 11,
+   "median_open_age_days": 53
+  },
+  {
+   "category": "Illuminated Bollard Top Missing",
+   "open": 1,
+   "closed": 1,
+   "total": 2,
+   "median_open_age_days": 451
+  },
+  {
+   "category": "Syringes / Needles / Drug related litter",
+   "open": 1,
+   "closed": 0,
+   "total": 1,
+   "median_open_age_days": 317
+  },
+  {
+   "category": "Zebra Crossing post Damaged",
+   "open": 1,
+   "closed": 1,
+   "total": 2,
+   "median_open_age_days": 82
+  },
+  {
+   "category": "Street light obscured by tree/hedge/vegetation",
+   "open": 1,
+   "closed": 0,
+   "total": 1,
+   "median_open_age_days": 33
+  },
+  {
+   "category": "Pedestrian push button not working",
+   "open": 1,
+   "closed": 0,
+   "total": 1,
+   "median_open_age_days": 16
+  },
+  {
+   "category": "Bollard dirty",
+   "open": 0,
+   "closed": 1,
+   "total": 1,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Hanging Lantern",
+   "open": 0,
+   "closed": 2,
+   "total": 2,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Sign dirty",
+   "open": 0,
+   "closed": 3,
+   "total": 3,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Retaining Wall",
+   "open": 0,
+   "closed": 2,
+   "total": 2,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Lost / Missing Cat",
+   "open": 0,
+   "closed": 3,
+   "total": 3,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Street Light Knocked Down",
+   "open": 0,
+   "closed": 3,
+   "total": 3,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Ironwork missing",
+   "open": 0,
+   "closed": 1,
+   "total": 1,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Street Light Door Off",
+   "open": 0,
+   "closed": 3,
+   "total": 3,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Dog missing",
+   "open": 0,
+   "closed": 2,
+   "total": 2,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Dog found",
+   "open": 0,
+   "closed": 5,
+   "total": 5,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Stud missing/defective",
+   "open": 0,
+   "closed": 5,
+   "total": 5,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Street Light Electrical Wiring",
+   "open": 0,
+   "closed": 1,
+   "total": 1,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Illuminated Bollard Missing",
+   "open": 0,
+   "closed": 1,
+   "total": 1,
+   "median_open_age_days": 0
+  },
+  {
+   "category": "Illuminated Sign Knocked Down",
+   "open": 0,
+   "closed": 1,
+   "total": 1,
+   "median_open_age_days": 0
+  }
+ ],
+ "roll_of_shame": [
+  {
+   "days_open": 727,
+   "title": "Grass verges overgrown",
+   "category": "Grass problem",
+   "url": "https://www.fixmystreet.com/report/6200207",
+   "reported": "2024-07-07",
+   "lat": "52.897648",
+   "long": "-3.068262"
+  },
+  {
+   "days_open": 726,
+   "title": "Safety Barrier Broken",
+   "category": "Street Furniture",
+   "url": "https://www.fixmystreet.com/report/6204510",
+   "reported": "2024-07-08",
+   "lat": "52.853772",
+   "long": "-3.046378"
+  },
+  {
+   "days_open": 726,
+   "title": "New VAS need fitting",
+   "category": "Sign missing/defective",
+   "url": "https://www.fixmystreet.com/report/6206701",
+   "reported": "2024-07-09",
+   "lat": "52.899882",
+   "long": "-3.040214"
+  },
+  {
+   "days_open": 725,
+   "title": "Overgrowth IS BEGINING DANGEROUS.",
+   "category": "Overgrown Trees/Hedges",
+   "url": "https://www.fixmystreet.com/report/6208077",
+   "reported": "2024-07-09",
+   "lat": "52.853534",
+   "long": "-3.047571"
+  },
+  {
+   "days_open": 725,
+   "title": "Drains",
+   "category": "Drain blocked",
+   "url": "https://www.fixmystreet.com/report/6209665",
+   "reported": "2024-07-09",
+   "lat": "52.854822",
+   "long": "-3.051404"
+  },
+  {
+   "days_open": 722,
+   "title": "Over grown path",
+   "category": "Tree/Grass/Shrub Problem on a highway/verge",
+   "url": "https://www.fixmystreet.com/report/6222932",
+   "reported": "2024-07-12",
+   "lat": "52.845058",
+   "long": "-3.021999"
+  },
+  {
+   "days_open": 722,
+   "title": "Parking on footpath blocking pedestrians access",
+   "category": "Other Highways issue",
+   "url": "https://www.fixmystreet.com/report/6224294",
+   "reported": "2024-07-12",
+   "lat": "52.859159",
+   "long": "-3.0434"
+  },
+  {
+   "days_open": 721,
+   "title": "Sign broken",
+   "category": "Sign missing/defective",
+   "url": "https://www.fixmystreet.com/report/6225989",
+   "reported": "2024-07-13",
+   "lat": "52.851743",
+   "long": "-3.039275"
+  },
+  {
+   "days_open": 719,
+   "title": "Verges overgrown and impeding the highway.",
+   "category": "Other Highways issue",
+   "url": "https://www.fixmystreet.com/report/6230310",
+   "reported": "2024-07-15",
+   "lat": "52.880035",
+   "long": "-3.078154"
+  },
+  {
+   "days_open": 719,
+   "title": "Hedging overgrown",
+   "category": "Verge/Visibility problem",
+   "url": "https://www.fixmystreet.com/report/6232040",
+   "reported": "2024-07-15",
+   "lat": "52.879969",
+   "long": "-3.029222"
+  },
+  {
+   "days_open": 719,
+   "title": "Blocked drains and ditch",
+   "category": "Drain blocked",
+   "url": "https://www.fixmystreet.com/report/6232914",
+   "reported": "2024-07-15",
+   "lat": "52.819337",
+   "long": "-3.023532"
+  },
+  {
+   "days_open": 719,
+   "title": "Footpath between Morda Rd and Primrose Court in Oswestry",
+   "category": "Overgrown Trees/Hedges",
+   "url": "https://www.fixmystreet.com/report/6233502",
+   "reported": "2024-07-15",
+   "lat": "52.85267",
+   "long": "-3.059167"
+  },
+  {
+   "days_open": 718,
+   "title": "Tree obstructing Street Light",
+   "category": "Overgrown Trees/Hedges",
+   "url": "https://www.fixmystreet.com/report/6234869",
+   "reported": "2024-07-16",
+   "lat": "52.859333",
+   "long": "-3.064195"
+  },
+  {
+   "days_open": 718,
+   "title": "New Belisha beacon",
+   "category": "Street Light Flash/Flickering",
+   "url": "https://www.fixmystreet.com/report/6238458",
+   "reported": "2024-07-16",
+   "lat": "52.856579",
+   "long": "-3.059559"
+  },
+  {
+   "days_open": 718,
+   "title": "New light fitted yesterday",
+   "category": "Zebra Crossing Light Out",
+   "url": "https://www.fixmystreet.com/report/6238929",
+   "reported": "2024-07-17",
+   "lat": "52.856334",
+   "long": "-3.059276"
+  },
+  {
+   "days_open": 717,
+   "title": "B5009 there needs to be more warning signs for a school along with extra 30mph signs,drivers do not slow down when passing the school",
+   "category": "Sign missing/defective",
+   "url": "https://www.fixmystreet.com/report/6240690",
+   "reported": "2024-07-17",
+   "lat": "52.898471",
+   "long": "-3.039635"
+  },
+  {
+   "days_open": 717,
+   "title": "Heavy load construction lorries traveling at speed",
+   "category": "Other Highways issue",
+   "url": "https://www.fixmystreet.com/report/6238593",
+   "reported": "2024-07-17",
+   "lat": "52.859432",
+   "long": "-3.040261"
+  },
+  {
+   "days_open": 716,
+   "title": "Traffic on Middleton rd needs speed cameras as is 30mph but cars speeding day and night",
+   "category": "Other Highways issue",
+   "url": "https://www.fixmystreet.com/report/6245832",
+   "reported": "2024-07-18",
+   "lat": "52.858652",
+   "long": "-3.046274"
+  },
+  {
+   "days_open": 716,
+   "title": "Overgrown vegetation junction of Southlands and the main road",
+   "category": "Tree/Grass/Shrub Problem on a highway/verge",
+   "url": "https://www.fixmystreet.com/report/6248271",
+   "reported": "2024-07-19",
+   "lat": "52.891851",
+   "long": "-3.031775"
+  },
+  {
+   "days_open": 713,
+   "title": "Near pedestrian collision",
+   "category": "Other Highways issue",
+   "url": "https://www.fixmystreet.com/report/6255116",
+   "reported": "2024-07-21",
+   "lat": "52.87424",
+   "long": "-3.028048"
+  },
+  {
+   "days_open": 713,
+   "title": "Overgrown hedges",
+   "category": "Flower/Shrubs bed problem",
+   "url": "https://www.fixmystreet.com/report/6257568",
+   "reported": "2024-07-21",
+   "lat": "52.854122",
+   "long": "-3.048409"
+  },
+  {
+   "days_open": 712,
+   "title": "Street light out",
+   "category": "Street Light Out",
+   "url": "https://www.fixmystreet.com/report/6260659",
+   "reported": "2024-07-22",
+   "lat": "52.84831",
+   "long": "-3.065306"
+  },
+  {
+   "days_open": 712,
+   "title": "Desperate block drains",
+   "category": "Drain blocked",
+   "url": "https://www.fixmystreet.com/report/6260891",
+   "reported": "2024-07-22",
+   "lat": "52.854305",
+   "long": "-3.049276"
+  },
+  {
+   "days_open": 712,
+   "title": "Big dip - not level with the pavement so you could break your ankle.",
+   "category": "Carriageway surface problem",
+   "url": "https://www.fixmystreet.com/report/6261559",
+   "reported": "2024-07-22",
+   "lat": "52.861114",
+   "long": "-3.034798"
+  },
+  {
+   "days_open": 710,
+   "title": "Overgrown Hedges",
+   "category": "Overgrown Trees/Hedges",
+   "url": "https://www.fixmystreet.com/report/6268937",
+   "reported": "2024-07-24",
+   "lat": "52.869715",
+   "long": "-3.091018"
+  }
+ ],
+ "duplicate_clusters": [
+  {
+   "count": 24,
+   "open": 1,
+   "lat": "52.874375",
+   "long": "-3.002686",
+   "titles": [
+    "Collection of potholes on junction.",
+    "Deep potholes",
+    "Extremely dangerous pothole on a main road junction.",
+    "HUGE hole by the drain cover",
+    "Hole developing around metal cover",
+    "Huge jagged uneven pot hole, unavoidable and right on the junction",
+    "Lots of big potholes on junction by The Boote pub",
+    "Lots of large holes getting worse",
+    "Massive pothole by the old boote",
+    "Multiple large potatoes appearing at road junction in Whittington village",
+    "Multiple potholes and surface problem on the junction of B5069 and A495",
+    "Numerous deep potholes",
+    "Numerous pot holes ( surface deterioration ) ye olde boote inn",
+    "Pot hole /surface problem",
+    "Pot hole and road surface deterioration",
+    "Pot holes and loose stones",
+    "Pot hothole getting bigger by the day, your council maintenance teams keep makin",
+    "Pothole around drain cover at jun tion",
+    "Potholes worsening",
+    "Road surface disintegration with a deepening pothole",
+    "Surface breaking up",
+    "Surface deterioration and pot holes",
+    "Traffic management diversion",
+    "White lines missing at T Junction"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6650871",
+    "https://www.fixmystreet.com/report/6785589",
+    "https://www.fixmystreet.com/report/6872947",
+    "https://www.fixmystreet.com/report/7022527",
+    "https://www.fixmystreet.com/report/7153983",
+    "https://www.fixmystreet.com/report/7220623",
+    "https://www.fixmystreet.com/report/7280537",
+    "https://www.fixmystreet.com/report/7318265",
+    "https://www.fixmystreet.com/report/7404077",
+    "https://www.fixmystreet.com/report/7455913",
+    "https://www.fixmystreet.com/report/7521018",
+    "https://www.fixmystreet.com/report/7887442",
+    "https://www.fixmystreet.com/report/8013940",
+    "https://www.fixmystreet.com/report/8169208",
+    "https://www.fixmystreet.com/report/8273000",
+    "https://www.fixmystreet.com/report/8300154",
+    "https://www.fixmystreet.com/report/8427824",
+    "https://www.fixmystreet.com/report/8431499",
+    "https://www.fixmystreet.com/report/8461081",
+    "https://www.fixmystreet.com/report/9365539",
+    "https://www.fixmystreet.com/report/9473742",
+    "https://www.fixmystreet.com/report/9558288",
+    "https://www.fixmystreet.com/report/9558290",
+    "https://www.fixmystreet.com/report/9673178"
+   ]
+  },
+  {
+   "count": 21,
+   "open": 0,
+   "lat": "52.857519",
+   "long": "-3.054822",
+   "titles": [
+    "Deep pothole at junction",
+    "Large pothole in road",
+    "Pothole at junction",
+    "Pothole in Smithfield Road (Report 3 of 5)",
+    "Pothole in road",
+    "Potholes around previously repaired section",
+    "Small pothole",
+    "Small pothole forming",
+    "Small pothole in road",
+    "Uneven surface"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8630599",
+    "https://www.fixmystreet.com/report/9554937",
+    "https://www.fixmystreet.com/report/9554946",
+    "https://www.fixmystreet.com/report/9554950",
+    "https://www.fixmystreet.com/report/9554958",
+    "https://www.fixmystreet.com/report/9554962",
+    "https://www.fixmystreet.com/report/9554993",
+    "https://www.fixmystreet.com/report/9555011",
+    "https://www.fixmystreet.com/report/9555032",
+    "https://www.fixmystreet.com/report/9555045",
+    "https://www.fixmystreet.com/report/9555062",
+    "https://www.fixmystreet.com/report/9555074",
+    "https://www.fixmystreet.com/report/9555095",
+    "https://www.fixmystreet.com/report/9555102",
+    "https://www.fixmystreet.com/report/9555109",
+    "https://www.fixmystreet.com/report/9555134",
+    "https://www.fixmystreet.com/report/9555138",
+    "https://www.fixmystreet.com/report/9555146",
+    "https://www.fixmystreet.com/report/9555151",
+    "https://www.fixmystreet.com/report/9555155",
+    "https://www.fixmystreet.com/report/9555161"
+   ]
+  },
+  {
+   "count": 10,
+   "open": 0,
+   "lat": "52.863059",
+   "long": "-3.049202",
+   "titles": [
+    "4 sets traffic lights all out",
+    "All temporary traffic light are stuck on red",
+    "All traffic lights been out for over 24hrs",
+    "Faulty pedestrian crossing",
+    "Light configuration problem: Pedestrian crossing signal not active when car ligh",
+    "Lights completely out at junction",
+    "None of the traffic lights are working",
+    "Perm lights all out",
+    "Red light failed",
+    "Traffic lights out in all areas of the three way system."
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6560689",
+    "https://www.fixmystreet.com/report/7541558",
+    "https://www.fixmystreet.com/report/7543326",
+    "https://www.fixmystreet.com/report/7545057",
+    "https://www.fixmystreet.com/report/7546555",
+    "https://www.fixmystreet.com/report/8462748",
+    "https://www.fixmystreet.com/report/8713296",
+    "https://www.fixmystreet.com/report/8916480",
+    "https://www.fixmystreet.com/report/9182204",
+    "https://www.fixmystreet.com/report/9183357"
+   ]
+  },
+  {
+   "count": 9,
+   "open": 3,
+   "lat": "52.861293",
+   "long": "-3.057336",
+   "titles": [
+    "Faulty Pedestrian Crossing, Castle Street, Oswestry",
+    "Pedestrian crossing",
+    "Pedestrian lights activating without button being pressed no pedestrians but lig",
+    "Signals constant",
+    "Traffic Signals Failed",
+    "Traffic lights constantly cycling",
+    "Traffic lights faulty",
+    "Traffic lights working incorrectly and causing unsafe conditions pefestrians and",
+    "Very frequent illegal parking"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6607357",
+    "https://www.fixmystreet.com/report/6703961",
+    "https://www.fixmystreet.com/report/7158419",
+    "https://www.fixmystreet.com/report/7249142",
+    "https://www.fixmystreet.com/report/7251085",
+    "https://www.fixmystreet.com/report/7286108",
+    "https://www.fixmystreet.com/report/7292551",
+    "https://www.fixmystreet.com/report/7326467",
+    "https://www.fixmystreet.com/report/7378060"
+   ]
+  },
+  {
+   "count": 7,
+   "open": 4,
+   "lat": "52.873423",
+   "long": "-3.002036",
+   "titles": [
+    "Amber light out at crossing",
+    "Green lamp out, outside castle",
+    "Lamps not working on pedestrian crossing",
+    "Lights in poor condition",
+    "Lights out",
+    "Multiple lamps out at pedestrian crossing",
+    "Two green lamps now out at pedestrian crossing"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6215733",
+    "https://www.fixmystreet.com/report/6380105",
+    "https://www.fixmystreet.com/report/6769335",
+    "https://www.fixmystreet.com/report/6918547",
+    "https://www.fixmystreet.com/report/7042309",
+    "https://www.fixmystreet.com/report/7474171",
+    "https://www.fixmystreet.com/report/7933912"
+   ]
+  },
+  {
+   "count": 6,
+   "open": 3,
+   "lat": "52.859803",
+   "long": "-3.053669",
+   "titles": [
+    "Cars cross lights from leg street when Oswald road side is green",
+    "Leg street traffic light sensor",
+    "Light timings not synched",
+    "Lights are changing too quickly. Lights turn to green before traffic from other ",
+    "No Audible Sound / Signal",
+    "Traffic light synchronisation is wrong"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6334392",
+    "https://www.fixmystreet.com/report/6619561",
+    "https://www.fixmystreet.com/report/6755862",
+    "https://www.fixmystreet.com/report/6761648",
+    "https://www.fixmystreet.com/report/6810731",
+    "https://www.fixmystreet.com/report/8018198"
+   ]
+  },
+  {
+   "count": 6,
+   "open": 3,
+   "lat": "52.856415",
+   "long": "-3.057748",
+   "titles": [
+    "Extremely difficult for pedestrians to cross",
+    "Intermitent fault on pedestrian push button (for crossing Lower Brook St, on sou",
+    "Pedestrian button not working",
+    "Pedestrian crossing not working",
+    "Traffic Light Timing Issues",
+    "Traffic lights changing too quickly"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6406299",
+    "https://www.fixmystreet.com/report/7026712",
+    "https://www.fixmystreet.com/report/7996855",
+    "https://www.fixmystreet.com/report/8259449",
+    "https://www.fixmystreet.com/report/9641668",
+    "https://www.fixmystreet.com/report/9719421"
+   ]
+  },
+  {
+   "count": 6,
+   "open": 3,
+   "lat": "52.857993",
+   "long": "-3.04985",
+   "titles": [
+    "Deep pot hole on Middleton Road (railway) bridge",
+    "Fence/barrier fallen down, Middleton Road bridge",
+    "Pothole",
+    "Pothole on bridge - AGAIN. THREAT TO LIFE",
+    "Pothole on the bridge that was bodged a few weeks ago",
+    "Threat to life!"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6989557",
+    "https://www.fixmystreet.com/report/8488759",
+    "https://www.fixmystreet.com/report/8576844",
+    "https://www.fixmystreet.com/report/8577593",
+    "https://www.fixmystreet.com/report/8915521",
+    "https://www.fixmystreet.com/report/8962923"
+   ]
+  },
+  {
+   "count": 6,
+   "open": 1,
+   "lat": "52.846437",
+   "long": "-3.041133",
+   "titles": [
+    "Large pothole heading towards Oswestry",
+    "Many potholes",
+    "Massive pothole that will cause significant damage to vehicles",
+    "Multiple large potholes",
+    "Multiple potholes",
+    "Potholes and blocked drains"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8664003",
+    "https://www.fixmystreet.com/report/8667424",
+    "https://www.fixmystreet.com/report/8718680",
+    "https://www.fixmystreet.com/report/8915624",
+    "https://www.fixmystreet.com/report/8959401",
+    "https://www.fixmystreet.com/report/8991159"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 0,
+   "lat": "52.85652",
+   "long": "-3.058007",
+   "titles": [
+    "Abandoned DIVERTED sign. Causing problems for disabled/prams/pushcahir access",
+    "Dangerous road surface & potholes upper brook st by traffic lights",
+    "Massive sink hole forming in the road",
+    "Sunken road surface and pot holes",
+    "Very deep and jarring potholes"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6206519",
+    "https://www.fixmystreet.com/report/6902036",
+    "https://www.fixmystreet.com/report/6965834",
+    "https://www.fixmystreet.com/report/6967628",
+    "https://www.fixmystreet.com/report/9093546"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 0,
+   "lat": "52.819324",
+   "long": "-3.021958",
+   "titles": [
+    "In residents parking layby",
+    "It's In the road / parking area",
+    "Layby space filled with soil and rubble",
+    "On council owned ground. Maesbury Marsh",
+    "Planting of trees on council land"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6355960",
+    "https://www.fixmystreet.com/report/7541195",
+    "https://www.fixmystreet.com/report/7597281",
+    "https://www.fixmystreet.com/report/7734750",
+    "https://www.fixmystreet.com/report/9294586"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 0,
+   "lat": "52.844682",
+   "long": "-3.058288",
+   "titles": [
+    "Pot hole on entrance to St Anne\u2019s Drive",
+    "Potholes",
+    "Potholes are now dangerous",
+    "Potholes at Junction of St Anne's Drive and Morda Bank",
+    "Road surface crumbling away"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6390186",
+    "https://www.fixmystreet.com/report/6419029",
+    "https://www.fixmystreet.com/report/6452796",
+    "https://www.fixmystreet.com/report/8840476",
+    "https://www.fixmystreet.com/report/8870476"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 1,
+   "lat": "52.819347",
+   "long": "-3.021917",
+   "titles": [
+    "By the garage block",
+    "Dirt and grass and weeds",
+    "In the lay-by spilling into the road",
+    "Marshfields maesbury marsh sy108je",
+    "Skip in road"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6396017",
+    "https://www.fixmystreet.com/report/7521658",
+    "https://www.fixmystreet.com/report/7584626",
+    "https://www.fixmystreet.com/report/7780139",
+    "https://www.fixmystreet.com/report/9475261"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 2,
+   "lat": "52.862373",
+   "long": "-3.060365",
+   "titles": [
+    "Huge loose debris and no road markings visible",
+    "Loads of deep potholes verh unsafe in dark crossing the road",
+    "Road surface damaged",
+    "Road surface is very rough, lots of loose chippings, due to blocked drainage on ",
+    "Whole junction needs repainting"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6613865",
+    "https://www.fixmystreet.com/report/8110035",
+    "https://www.fixmystreet.com/report/8676039",
+    "https://www.fixmystreet.com/report/8893964",
+    "https://www.fixmystreet.com/report/9307512"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 0,
+   "lat": "52.864516",
+   "long": "-3.052403",
+   "titles": [
+    "Damaged Streetlight",
+    "Street light damaged by fire",
+    "Street light still not working",
+    "Streetlight Out"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6674953",
+    "https://www.fixmystreet.com/report/7258116",
+    "https://www.fixmystreet.com/report/7332003",
+    "https://www.fixmystreet.com/report/7375113",
+    "https://www.fixmystreet.com/report/7590661"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 0,
+   "lat": "52.857266",
+   "long": "-3.054358",
+   "titles": [
+    "40 inch pothole",
+    "Deep pothole",
+    "Pothole and poor surface in Smithfield Road (Report 5 of 5)",
+    "Smithfield Road Oswestry - too many pot holes to count 02.06.26"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7278923",
+    "https://www.fixmystreet.com/report/8630677",
+    "https://www.fixmystreet.com/report/8810162",
+    "https://www.fixmystreet.com/report/8955829",
+    "https://www.fixmystreet.com/report/9550659"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 1,
+   "lat": "52.819121",
+   "long": "-3.022221",
+   "titles": [
+    "///hockey.sandals.shifting. Beside white garages at SY108JE.",
+    "Car not moved over a week",
+    "Council owned land by the garages",
+    "Marshfields, beside white garages.",
+    "On council verge, road and parking"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7584657",
+    "https://www.fixmystreet.com/report/8922351",
+    "https://www.fixmystreet.com/report/8978344",
+    "https://www.fixmystreet.com/report/9181388",
+    "https://www.fixmystreet.com/report/9489872"
+   ]
+  },
+  {
+   "count": 5,
+   "open": 4,
+   "lat": "52.872156",
+   "long": "-3.117193",
+   "titles": [
+    "Dangerous road surface",
+    "Major potholes and damage to road surface",
+    "Major potholes and road damage",
+    "Major potholes and surface damage",
+    "Potholes and surface damage"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7675681",
+    "https://www.fixmystreet.com/report/7675692",
+    "https://www.fixmystreet.com/report/7778812",
+    "https://www.fixmystreet.com/report/7968441",
+    "https://www.fixmystreet.com/report/9107524"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.87823",
+   "long": "-3.027032",
+   "titles": [
+    "Blicked drainage",
+    "Blocked drain",
+    "Drains blocked with silt, floods the road everytime it rains",
+    "Hedge covering pavement"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6224399",
+    "https://www.fixmystreet.com/report/6224405",
+    "https://www.fixmystreet.com/report/6530596",
+    "https://www.fixmystreet.com/report/6530600"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.859333",
+   "long": "-3.064195",
+   "titles": [
+    "20 Metres of tarmac surface gone exposing road foundations",
+    "Deep pot holes Brynhafod lane",
+    "The existing pot holes are getting deeper and wide. Muddy lane stream overflows ",
+    "Tree obstructing Street Light"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6234869",
+    "https://www.fixmystreet.com/report/8349272",
+    "https://www.fixmystreet.com/report/8604542",
+    "https://www.fixmystreet.com/report/8703922"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.819551",
+   "long": "-3.021686",
+   "titles": [
+    "Blue dumpy bag",
+    "Building materials blocking pavement",
+    "Building waste blocking foot path",
+    "Tipper load of sand blocking kerb"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6255598",
+    "https://www.fixmystreet.com/report/6394385",
+    "https://www.fixmystreet.com/report/8676281",
+    "https://www.fixmystreet.com/report/8682125"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 2,
+   "lat": "52.895322",
+   "long": "-3.03979",
+   "titles": [
+    "Overgrown bush",
+    "Pathway blocked due to overgrowth from property",
+    "Pavement blocked overgrown trees",
+    "Shrubs and trees completely cover pathway"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6344418",
+    "https://www.fixmystreet.com/report/6702225",
+    "https://www.fixmystreet.com/report/7897522",
+    "https://www.fixmystreet.com/report/7900183"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.85453",
+   "long": "-3.060371",
+   "titles": [
+    "Alleyway dangerously slippy",
+    "Broken fence along footpath maintained by suc",
+    "Fence collapsed",
+    "Overgrown weeds and vegetation"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6445392",
+    "https://www.fixmystreet.com/report/8267032",
+    "https://www.fixmystreet.com/report/8552764",
+    "https://www.fixmystreet.com/report/9139388"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 2,
+   "lat": "52.890545",
+   "long": "-3.028947",
+   "titles": [
+    "3rd time reporting street lights not working",
+    "Many street lights on a section of Whittington Road are YET AGAIN init working",
+    "Still no street lights !!",
+    "Street lights AGAIN not working"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6689956",
+    "https://www.fixmystreet.com/report/6711109",
+    "https://www.fixmystreet.com/report/6728336",
+    "https://www.fixmystreet.com/report/7189087"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.856492",
+   "long": "-3.059111",
+   "titles": [
+    "Street Light on 24 hours a day.",
+    "Street light out",
+    "Streetworks warning signage blocking footpath",
+    "Welsh Walls light 18 and Upper Brook Street 4 have been out for almost a year!!"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6701662",
+    "https://www.fixmystreet.com/report/6966522",
+    "https://www.fixmystreet.com/report/9087149",
+    "https://www.fixmystreet.com/report/9194466"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.862792",
+   "long": "-3.053225",
+   "titles": [
+    "Dog or human poo",
+    "Dog poo",
+    "Human poo",
+    "Terribly big shit Needs to be cleaned"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6716825",
+    "https://www.fixmystreet.com/report/6717323",
+    "https://www.fixmystreet.com/report/6801286",
+    "https://www.fixmystreet.com/report/6801307"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.857465",
+   "long": "-3.059005",
+   "titles": [
+    "Huge pothole around drain - danger to vehicles",
+    "Road surface awful",
+    "Welsh Walls road surface",
+    "Welsh walls flooding along road down to upper brook street"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6773884",
+    "https://www.fixmystreet.com/report/7090557",
+    "https://www.fixmystreet.com/report/9483286",
+    "https://www.fixmystreet.com/report/9659422"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.8576",
+   "long": "-3.05902",
+   "titles": [
+    "Potholes & Road surface issue",
+    "Road flooded by blocked drain",
+    "Standind water to entrance of Lakehome",
+    "Various potholes in road"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6831041",
+    "https://www.fixmystreet.com/report/6940634",
+    "https://www.fixmystreet.com/report/8884561",
+    "https://www.fixmystreet.com/report/9656590"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.857613",
+   "long": "-3.055012",
+   "titles": [
+    "Deep potholes along this stretch of road",
+    "Extensive potholes",
+    "Pot hole next to drop kerb my entrance to M&S Oswestry",
+    "Uneven pavement"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6855916",
+    "https://www.fixmystreet.com/report/8458132",
+    "https://www.fixmystreet.com/report/8832032",
+    "https://www.fixmystreet.com/report/8933934"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.862026",
+   "long": "-3.054832",
+   "titles": [
+    "3 men in white transit van fly tipping",
+    "Bin area",
+    "Bin area every week",
+    "No bin cages to hold bins in place"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6891966",
+    "https://www.fixmystreet.com/report/6892415",
+    "https://www.fixmystreet.com/report/8817231",
+    "https://www.fixmystreet.com/report/8820892"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.855459",
+   "long": "-3.037783",
+   "titles": [
+    "Deep hole",
+    "Pot hole",
+    "Thick ice, very slippery on path and road"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6927268",
+    "https://www.fixmystreet.com/report/6947677",
+    "https://www.fixmystreet.com/report/7157964",
+    "https://www.fixmystreet.com/report/8968086"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 2,
+   "lat": "52.832953",
+   "long": "-3.103661",
+   "titles": [
+    "Empty grit bin half way up Spring Bank",
+    "Grit bin in Malthouse Lane at junction with Malthouse Close",
+    "Grit bin on Old Post Office Lane/Dallas Lane junction",
+    "Hedge growing into road"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6964014",
+    "https://www.fixmystreet.com/report/7956479",
+    "https://www.fixmystreet.com/report/8668588",
+    "https://www.fixmystreet.com/report/8729450"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.857339",
+   "long": "-3.054517",
+   "titles": [
+    "Big potholes in Smithfield street",
+    "Smithfield road Oswestry lots of potholes",
+    "Streetlight 1 Out",
+    "Streetlight 1 Smithfield St by Masonic Hall off"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7154864",
+    "https://www.fixmystreet.com/report/8469656",
+    "https://www.fixmystreet.com/report/9107649",
+    "https://www.fixmystreet.com/report/9565572"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.862567",
+   "long": "-3.031303",
+   "titles": [
+    "Blocked drain",
+    "Pothole in Pavement",
+    "Pothole on pavement",
+    "Small Pothole in Pavement"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7206849",
+    "https://www.fixmystreet.com/report/9582813",
+    "https://www.fixmystreet.com/report/9582908",
+    "https://www.fixmystreet.com/report/9583367"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 4,
+   "lat": "52.868139",
+   "long": "-3.03777",
+   "titles": [
+    "Big hole in road",
+    "Large pothole",
+    "Pot hole",
+    "Pothole right on the junction"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7214728",
+    "https://www.fixmystreet.com/report/7217584",
+    "https://www.fixmystreet.com/report/8715127",
+    "https://www.fixmystreet.com/report/8965753"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 3,
+   "lat": "52.894462",
+   "long": "-3.037762",
+   "titles": [
+    "Bin outside the co-op",
+    "Bin overflowing outside Coop",
+    "Litter bin overflowing",
+    "Rats running up and down an overflowing bin"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7325523",
+    "https://www.fixmystreet.com/report/9219665",
+    "https://www.fixmystreet.com/report/9302615",
+    "https://www.fixmystreet.com/report/9304321"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 2,
+   "lat": "52.853505",
+   "long": "-3.044895",
+   "titles": [
+    "Cars blocking access to houses, leaving the ground and surrounding environment a",
+    "Hedges over Drive way between 10-12 fir grove",
+    "Several cars being left in the area behind the houses on fur grove",
+    "Several cars blocking access to area outside people's homes"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7530799",
+    "https://www.fixmystreet.com/report/7829422",
+    "https://www.fixmystreet.com/report/8211947",
+    "https://www.fixmystreet.com/report/8938423"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.840925",
+   "long": "-3.056149",
+   "titles": [
+    "Grit bin",
+    "Pathway with overgrown hedge leaning onto it",
+    "Sy10 9nh lower Erw Wen",
+    "Sy10 9nh lower Erw Wen Morda"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7647122",
+    "https://www.fixmystreet.com/report/8629789",
+    "https://www.fixmystreet.com/report/8655466",
+    "https://www.fixmystreet.com/report/8694244"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 2,
+   "lat": "52.862036",
+   "long": "-3.051816",
+   "titles": [
+    "Bin bags full covering pavement",
+    "Next to the building 64",
+    "Rubbish bags piled up. Hazardous. Rats seen. Filthy area which smells strongly o",
+    "The side of number 64 Beatrice street"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7660527",
+    "https://www.fixmystreet.com/report/8148678",
+    "https://www.fixmystreet.com/report/8161045",
+    "https://www.fixmystreet.com/report/8615345"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 2,
+   "lat": "52.843833",
+   "long": "-3.03991",
+   "titles": [
+    "Large pothole on the junction",
+    "Pothole",
+    "Road surface issue mars-y-clawed junction to maesbury rd"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8301269",
+    "https://www.fixmystreet.com/report/9355861",
+    "https://www.fixmystreet.com/report/9355871",
+    "https://www.fixmystreet.com/report/9357522"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.874422",
+   "long": "-3.002635",
+   "titles": [
+    "Deep hole around drain cover",
+    "Junction by the ye ole boote pub has numerous potholes",
+    "Massive pothole in junction",
+    "Pot holes and road surface deterioration"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8427846",
+    "https://www.fixmystreet.com/report/8441934",
+    "https://www.fixmystreet.com/report/9125789",
+    "https://www.fixmystreet.com/report/9592804"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 3,
+   "lat": "52.855327",
+   "long": "-3.05506",
+   "titles": [
+    "15.05.2026 bin overflowing",
+    "Bin at end of Victoria Street overflowing",
+    "Bin by Ramos Victoria Street overflowing again",
+    "Leaves and debris blocking drain outside Ramos in Victoria Street"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8523510",
+    "https://www.fixmystreet.com/report/9222487",
+    "https://www.fixmystreet.com/report/9399238",
+    "https://www.fixmystreet.com/report/9455462"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 4,
+   "lat": "52.883098",
+   "long": "-3.035357",
+   "titles": [
+    "Drain blocked still",
+    "Grid blocked massive flood , traffic driving through causing tidal wave to smash",
+    "Main grid blocked",
+    "Storm drain issue"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8527804",
+    "https://www.fixmystreet.com/report/8712366",
+    "https://www.fixmystreet.com/report/8718147",
+    "https://www.fixmystreet.com/report/9356325"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.857673",
+   "long": "-3.05515",
+   "titles": [
+    "Deep pot hole in Smithfield Road (Report 1 of 5)",
+    "Huge pothole in the road",
+    "Large deep pothole",
+    "MASSIVE potholes now all along Smithfield Road Oswestry SY11 2EL"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8630506",
+    "https://www.fixmystreet.com/report/8837457",
+    "https://www.fixmystreet.com/report/8933902",
+    "https://www.fixmystreet.com/report/8943844"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 2,
+   "lat": "52.864472",
+   "long": "-3.055388",
+   "titles": [
+    "12 x 12 inch pothole that is breaking up more each day as cars turn into and out",
+    "Pothole",
+    "Pothole on the bend"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8747595",
+    "https://www.fixmystreet.com/report/8844336",
+    "https://www.fixmystreet.com/report/9441097",
+    "https://www.fixmystreet.com/report/9441107"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 0,
+   "lat": "52.857739",
+   "long": "-3.055286",
+   "titles": [
+    "Pot hole",
+    "Pothole in pavement",
+    "Very uneven surface on pavement"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8810168",
+    "https://www.fixmystreet.com/report/9554912",
+    "https://www.fixmystreet.com/report/9554918",
+    "https://www.fixmystreet.com/report/9554926"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 1,
+   "lat": "52.848045",
+   "long": "-3.054834",
+   "titles": [
+    "Bin is full again in just 2 weeks",
+    "Bin is full, about to overflow",
+    "Bin still overflowing",
+    "Entrance to Glentworth Woods on Weston Lane"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9022274",
+    "https://www.fixmystreet.com/report/9082212",
+    "https://www.fixmystreet.com/report/9168635",
+    "https://www.fixmystreet.com/report/9194043"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 4,
+   "lat": "52.868101",
+   "long": "-3.037688",
+   "titles": [
+    "Multiple potholes",
+    "Only half the job done",
+    "Road surface degradation",
+    "Several Close Potholes"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9029541",
+    "https://www.fixmystreet.com/report/9033637",
+    "https://www.fixmystreet.com/report/9384906",
+    "https://www.fixmystreet.com/report/9499214"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 2,
+   "lat": "52.866405",
+   "long": "-3.050094",
+   "titles": [
+    "Pothole",
+    "Potholes"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9246113",
+    "https://www.fixmystreet.com/report/9246120",
+    "https://www.fixmystreet.com/report/9246124",
+    "https://www.fixmystreet.com/report/9246129"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 4,
+   "lat": "52.864652",
+   "long": "-3.053319",
+   "titles": [
+    "Blocked drain"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9441041",
+    "https://www.fixmystreet.com/report/9441049",
+    "https://www.fixmystreet.com/report/9441058",
+    "https://www.fixmystreet.com/report/9441068"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 4,
+   "lat": "52.862755",
+   "long": "-3.057868",
+   "titles": [
+    "3 potholes emerging on previously repaired section",
+    "Small pothole on previously repaired section",
+    "Uneven surface",
+    "Uneven surface by drain cover"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9441259",
+    "https://www.fixmystreet.com/report/9441267",
+    "https://www.fixmystreet.com/report/9441276",
+    "https://www.fixmystreet.com/report/9441283"
+   ]
+  },
+  {
+   "count": 4,
+   "open": 4,
+   "lat": "52.8572",
+   "long": "-3.069553",
+   "titles": [
+    "No weedkilling maintenance carried out on paviour opposite 35 Llanforda Mead",
+    "Overgrown paviour opposite 35 Llanforda Mead",
+    "Play area opposite35 Llanforda Mead overgrown. Grass is approximately 4 feet hig"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9720778",
+    "https://www.fixmystreet.com/report/9720823",
+    "https://www.fixmystreet.com/report/9720848",
+    "https://www.fixmystreet.com/report/9720865"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.857556",
+   "long": "-3.050777",
+   "titles": [
+    "Abandoned wheelie bins",
+    "Adjacent to no 4 Middleton road flat",
+    "Rubbish out on street"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6242568",
+    "https://www.fixmystreet.com/report/6496068",
+    "https://www.fixmystreet.com/report/8883745"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.84831",
+   "long": "-3.065306",
+   "titles": [
+    "LED light i needs shielding",
+    "Street light out",
+    "Street light still off despite several reports"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6260659",
+    "https://www.fixmystreet.com/report/7324591",
+    "https://www.fixmystreet.com/report/7953435"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.85962",
+   "long": "-3.064983",
+   "titles": [
+    "Flood still pouring water through wall",
+    "Multiple large pot holes, road service disintegrated due to flooding issues",
+    "Several dangerous potholes and surface deterioration"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6287799",
+    "https://www.fixmystreet.com/report/6630465",
+    "https://www.fixmystreet.com/report/9237924"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.862628",
+   "long": "-3.055028",
+   "titles": [
+    "Light out",
+    "Street light not working",
+    "Streetlight out"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6336207",
+    "https://www.fixmystreet.com/report/6704096",
+    "https://www.fixmystreet.com/report/7349611"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.862948",
+   "long": "-3.060696",
+   "titles": [
+    "Block Drain",
+    "Blocked drain"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6341434",
+    "https://www.fixmystreet.com/report/7894258",
+    "https://www.fixmystreet.com/report/9702538"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.862605",
+   "long": "-3.060535",
+   "titles": [
+    "Block drain",
+    "Light Still Flickering on & off",
+    "Street light on the junction is flashing on and off at regular intervals."
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6341418",
+    "https://www.fixmystreet.com/report/8358677",
+    "https://www.fixmystreet.com/report/8717607"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.862454",
+   "long": "-3.048448",
+   "titles": [
+    "Can a crossing be made for wheelchair users",
+    "Play Equipment Missing",
+    "Wilfred Owen Green, Oswestry. Water on path"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6352235",
+    "https://www.fixmystreet.com/report/9238252",
+    "https://www.fixmystreet.com/report/9238282"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.819107",
+   "long": "-3.022255",
+   "titles": [
+    "New rubbish dumped",
+    "On grass verge ahead of parking layby and infront of white garages",
+    "Over loaded and dangerous vehicles dumped"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6397417",
+    "https://www.fixmystreet.com/report/6929018",
+    "https://www.fixmystreet.com/report/8947749"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.874556",
+   "long": "-3.003142",
+   "titles": [
+    "Road works sign left on site",
+    "Shallow rooted tree a danger for falling",
+    "Traffic cone left on site"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6441254",
+    "https://www.fixmystreet.com/report/6441258",
+    "https://www.fixmystreet.com/report/8135323"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.88829",
+   "long": "-3.049113",
+   "titles": [
+    "On corner and desend around a bend",
+    "Road surfaces and severn Trent need to find out the problem if running water fro",
+    "Water coming up through the tarmac"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6451127",
+    "https://www.fixmystreet.com/report/7357717",
+    "https://www.fixmystreet.com/report/9369608"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.857734",
+   "long": "-3.050982",
+   "titles": [
+    "Ground",
+    "Overgrown weeds",
+    "This piece of ground is overgrown and needs cutting back"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6456179",
+    "https://www.fixmystreet.com/report/6472711",
+    "https://www.fixmystreet.com/report/7672670"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.860958",
+   "long": "-3.069085",
+   "titles": [
+    "Drain blocked",
+    "Road gutter needs cleaning",
+    "Road needs sweeping"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6496591",
+    "https://www.fixmystreet.com/report/6496608",
+    "https://www.fixmystreet.com/report/7261420"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.864201",
+   "long": "-3.040499",
+   "titles": [
+    "7 lights are out",
+    "New LED lights are in all day",
+    "Street Light in Unicorn Road Playground"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6558899",
+    "https://www.fixmystreet.com/report/7361406",
+    "https://www.fixmystreet.com/report/8495436"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.859388",
+   "long": "-3.060513",
+   "titles": [
+    "Cone left in road",
+    "Cones in road",
+    "Continuous illegal parking for months"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6560963",
+    "https://www.fixmystreet.com/report/6604757",
+    "https://www.fixmystreet.com/report/6605769"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.848233",
+   "long": "-3.06144",
+   "titles": [
+    "Light no 8 not working",
+    "Street Lighting",
+    "Street Lighting Morda Close Oswestry SY112BA"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6562758",
+    "https://www.fixmystreet.com/report/8796346",
+    "https://www.fixmystreet.com/report/9237201"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.854362",
+   "long": "-3.065389",
+   "titles": [
+    "Light opposite Clovelly & Bryn Melyn in Trefonen Road, Oswestry SY11 2TW",
+    "Street Light has not worked for a year. Column 20",
+    "Street light out"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6576803",
+    "https://www.fixmystreet.com/report/6823680",
+    "https://www.fixmystreet.com/report/8321074"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.854415",
+   "long": "-3.049233",
+   "titles": [
+    "Hedge overgrown.",
+    "Highway light out",
+    "The hedge bordering the footpath"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6616995",
+    "https://www.fixmystreet.com/report/6725133",
+    "https://www.fixmystreet.com/report/9550597"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.880398",
+   "long": "-3.029479",
+   "titles": [
+    "Flood",
+    "Flood on road again",
+    "Two drains blocked on either side of road"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6621502",
+    "https://www.fixmystreet.com/report/6774873",
+    "https://www.fixmystreet.com/report/7204173"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.858863",
+   "long": "-3.055753",
+   "titles": [
+    "Flooding on Church Street",
+    "Sign missing",
+    "Streetlight Out"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6622228",
+    "https://www.fixmystreet.com/report/7867042",
+    "https://www.fixmystreet.com/report/9107601"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.84185",
+   "long": "-3.081326",
+   "titles": [
+    "Flood water covering road",
+    "Flooding caused by overwhelmed and blocked drains water.",
+    "Request for sand bags"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6623057",
+    "https://www.fixmystreet.com/report/6623077",
+    "https://www.fixmystreet.com/report/8577270"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.896985",
+   "long": "-3.034825",
+   "titles": [
+    "4\" deep and 10\" wide pothole on the road",
+    "BIG pothole.",
+    "Very large dangerous hole."
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6629420",
+    "https://www.fixmystreet.com/report/6814163",
+    "https://www.fixmystreet.com/report/7981997"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.857755",
+   "long": "-3.051094",
+   "titles": [
+    "Adjacent to flat 4 Middleton road Oswestry",
+    "At side adjacent to flats ( 2 and 4 )",
+    "At side of flats in middleton road"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6649733",
+    "https://www.fixmystreet.com/report/6661767",
+    "https://www.fixmystreet.com/report/8429949"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.848066",
+   "long": "-3.054809",
+   "titles": [
+    "Bin is full",
+    "Just at the end of Glentworth wood, and spilling out to Weston Lane.",
+    "Rubbish bags left by bin"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6671167",
+    "https://www.fixmystreet.com/report/6675295",
+    "https://www.fixmystreet.com/report/7085069"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.862058",
+   "long": "-3.057311",
+   "titles": [
+    "Litter bin overflowing",
+    "Overflowing bin",
+    "Overgrown trees causing nuisance to properties on York Street"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6702531",
+    "https://www.fixmystreet.com/report/9159455",
+    "https://www.fixmystreet.com/report/9184114"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.87182",
+   "long": "-3.005051",
+   "titles": [
+    "Excessive flooding and pottential house damage",
+    "Overgrown hedges",
+    "The drains are full to the top and haven\u2019t been emptied for at least a year"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6702987",
+    "https://www.fixmystreet.com/report/8521193",
+    "https://www.fixmystreet.com/report/8527778"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.894057",
+   "long": "-3.040907",
+   "titles": [
+    "Flicker light",
+    "Flickering light",
+    "Flicking light"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6715996",
+    "https://www.fixmystreet.com/report/6722637",
+    "https://www.fixmystreet.com/report/7131984"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.897404",
+   "long": "-3.036704",
+   "titles": [
+    "Request for Gritting",
+    "Request for Salt Bin",
+    "Salt bin needed"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6767976",
+    "https://www.fixmystreet.com/report/6767982",
+    "https://www.fixmystreet.com/report/6945561"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.894568",
+   "long": "-3.037605",
+   "titles": [
+    "Blocked Drain",
+    "Drains in layby",
+    "Flood water."
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6774035",
+    "https://www.fixmystreet.com/report/8316440",
+    "https://www.fixmystreet.com/report/8508548"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.853523",
+   "long": "-3.047443",
+   "titles": [
+    "Light out at 07:00",
+    "Overgrown bushes",
+    "Streetlight no.26 not working at 5.30pm"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6815499",
+    "https://www.fixmystreet.com/report/7770680",
+    "https://www.fixmystreet.com/report/8775102"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.882132",
+   "long": "-3.017968",
+   "titles": [
+    "Flooded right across road and getting deeper.",
+    "Flooding"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6830756",
+    "https://www.fixmystreet.com/report/6830764",
+    "https://www.fixmystreet.com/report/6831058"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.849411",
+   "long": "-3.077851",
+   "titles": [
+    "Large unavoidable potholes on junction",
+    "Need a mirror",
+    "Severe damage to surface"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6853641",
+    "https://www.fixmystreet.com/report/6969651",
+    "https://www.fixmystreet.com/report/7795906"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.849492",
+   "long": "-3.078039",
+   "titles": [
+    "Huge potholes on the junction. Can damage car",
+    "Massive pot hole",
+    "Road is verging on impassible"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6863493",
+    "https://www.fixmystreet.com/report/6887447",
+    "https://www.fixmystreet.com/report/6947608"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.843022",
+   "long": "-3.0585",
+   "titles": [
+    "Large pothole outside pub",
+    "Recently had service\u2019s put across road",
+    "Service trench across road now pothole"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6880434",
+    "https://www.fixmystreet.com/report/6908932",
+    "https://www.fixmystreet.com/report/7065971"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.901195",
+   "long": "-3.040933",
+   "titles": [
+    "3 bin bags of litter adjacent to bin by Disley Close",
+    "3 black bags of rubbish plus car parcel shelf next to litter bin",
+    "Volunteer litter-pick"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6902611",
+    "https://www.fixmystreet.com/report/7078841",
+    "https://www.fixmystreet.com/report/7283935"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.862627",
+   "long": "-3.055101",
+   "titles": [
+    "Bin full of unbagged dog feces.",
+    "Dogpoo in two bins located on the road between crestwood court and prince st pro",
+    "To the rear of 30 Prince Street , oswestry , opposite Crestwell court flats"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6923082",
+    "https://www.fixmystreet.com/report/7443750",
+    "https://www.fixmystreet.com/report/7487939"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.853777",
+   "long": "-3.047996",
+   "titles": [
+    "Hedge overgrown over pavement",
+    "Pedestrian crossing not working",
+    "Traffic lights out"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6923467",
+    "https://www.fixmystreet.com/report/7491255",
+    "https://www.fixmystreet.com/report/9693410"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.859787",
+   "long": "-3.053956",
+   "titles": [
+    "Blocked drain water backing up risking flooding to property",
+    "Cones not removed on Cross street",
+    "Pavement Trip Hazard"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6945606",
+    "https://www.fixmystreet.com/report/7415799",
+    "https://www.fixmystreet.com/report/8248671"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.898963",
+   "long": "-3.035293",
+   "titles": [
+    "Grit bin been tipped over",
+    "Grit bin has been pushed over",
+    "Salt Bin EMPTY"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6967557",
+    "https://www.fixmystreet.com/report/7379752",
+    "https://www.fixmystreet.com/report/7390726"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.862116",
+   "long": "-3.054625",
+   "titles": [
+    "Street Light Out",
+    "Street light out",
+    "Street light panel is being held on my electric tape"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/6989488",
+    "https://www.fixmystreet.com/report/7349595",
+    "https://www.fixmystreet.com/report/9379418"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.860195",
+   "long": "-3.053786",
+   "titles": [
+    "Collapsed drainage gully",
+    "Drainage cover has completely collapsed on one side",
+    "Too many signs"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7012951",
+    "https://www.fixmystreet.com/report/9423328",
+    "https://www.fixmystreet.com/report/9423307"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.848008",
+   "long": "-3.058478",
+   "titles": [
+    "Blocked drains along the road opposite Cottams site",
+    "Number of potholes forming to create one large hole",
+    "Road floods"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7080731",
+    "https://www.fixmystreet.com/report/8407594",
+    "https://www.fixmystreet.com/report/9124713"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.858919",
+   "long": "-3.055668",
+   "titles": [
+    "Bag of rubbish left outside Meraki colour",
+    "Blocked Drain Gully",
+    "Drains around zebra crossing blocked"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7164273",
+    "https://www.fixmystreet.com/report/7884800",
+    "https://www.fixmystreet.com/report/8373579"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.854834",
+   "long": "-3.051972",
+   "titles": [
+    "Drain has sunk and the road broken up.",
+    "Manhole cover is loose, loud noise every time car passes over",
+    "Road Collapsing"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7205507",
+    "https://www.fixmystreet.com/report/7486254",
+    "https://www.fixmystreet.com/report/7727973"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.847943",
+   "long": "-3.003965",
+   "titles": [
+    "Large deep pothole",
+    "Large pothole",
+    "Pothole that caused damage to my tire"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7287079",
+    "https://www.fixmystreet.com/report/8776840",
+    "https://www.fixmystreet.com/report/8912620"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.852233",
+   "long": "-3.056945",
+   "titles": [
+    "Large vehicles cannot access Weston Land from Morda Road.",
+    "On weston lane outside Lulworth",
+    "The same potholes have developed as last year."
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7327485",
+    "https://www.fixmystreet.com/report/7327549",
+    "https://www.fixmystreet.com/report/8749956"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.861331",
+   "long": "-3.052647",
+   "titles": [
+    "Illuminated sign out",
+    "Road markings need amending",
+    "Rtc debris clear up"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7330813",
+    "https://www.fixmystreet.com/report/7489968",
+    "https://www.fixmystreet.com/report/9107773"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.86428",
+   "long": "-3.055107",
+   "titles": [
+    "Ned double yellow lines at busy junctions near primary schoolbusy particularly n",
+    "Pothole",
+    "Potholes Lloyd Street"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7356246",
+    "https://www.fixmystreet.com/report/8458888",
+    "https://www.fixmystreet.com/report/9445341"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.864028",
+   "long": "-3.041134",
+   "titles": [
+    "All dog bins full",
+    "Pedestrian Barrier Bent",
+    "Rubbish left behind"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7357918",
+    "https://www.fixmystreet.com/report/9316030",
+    "https://www.fixmystreet.com/report/9384836"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.846532",
+   "long": "-3.041128",
+   "titles": [
+    "Craters all across carriageway",
+    "Multiple potholes and extremely poor surface",
+    "Road crumbling and very dangerous"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7391367",
+    "https://www.fixmystreet.com/report/8913892",
+    "https://www.fixmystreet.com/report/9059091"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.861285",
+   "long": "-3.058348",
+   "titles": [
+    "Fence",
+    "Slates slipping off the roof",
+    "Un prohibited barrier"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7402548",
+    "https://www.fixmystreet.com/report/8600759",
+    "https://www.fixmystreet.com/report/8861738"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.862108",
+   "long": "-3.057247",
+   "titles": [
+    "2 flytipping sites on the carpark",
+    "Litter Bin Overflowing",
+    "New parking bollards are a trip hazard"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7431716",
+    "https://www.fixmystreet.com/report/7622912",
+    "https://www.fixmystreet.com/report/9219570"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.873081",
+   "long": "-3.010081",
+   "titles": [
+    "Broken keep left sign",
+    "Complete keep left bollard missing",
+    "Reflective bollard top missing"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7440077",
+    "https://www.fixmystreet.com/report/7970445",
+    "https://www.fixmystreet.com/report/8297582"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.871601",
+   "long": "-3.003831",
+   "titles": [
+    "Noisy traffic and HGV wagons speeding theough Whittington Shropshire village",
+    "Pavement covered in detritus",
+    "Speeding traffic going through Whittington Oswestry Shropshire village is TOO FA"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7460022",
+    "https://www.fixmystreet.com/report/7627265",
+    "https://www.fixmystreet.com/report/8510176"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.861182",
+   "long": "-3.058236",
+   "titles": [
+    "96 willow street , Oswestry",
+    "Bags of rubbish on pavement",
+    "Private railing installed on public footway"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7536246",
+    "https://www.fixmystreet.com/report/7751574",
+    "https://www.fixmystreet.com/report/8594255"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.831866",
+   "long": "-3.107695",
+   "titles": [
+    "Despite the sides being cut by Ali all resident the height and overhang of the t",
+    "Hedge and trees brushing against cars on single track highway",
+    "Huge pothole"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7614696",
+    "https://www.fixmystreet.com/report/7820633",
+    "https://www.fixmystreet.com/report/9662110"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.890286",
+   "long": "-3.038604",
+   "titles": [
+    "Drain full of debris",
+    "Drain full of debris and rubbish",
+    "Large pothole Unavoidable"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7675463",
+    "https://www.fixmystreet.com/report/7675482",
+    "https://www.fixmystreet.com/report/8891917"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.844007",
+   "long": "-3.105408",
+   "titles": [
+    "Mud on Road - danger to drivers",
+    "Numerous potholes",
+    "Overgrown banks encroaching on road"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7752217",
+    "https://www.fixmystreet.com/report/8156850",
+    "https://www.fixmystreet.com/report/9375172"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.863019",
+   "long": "-3.056027",
+   "titles": [
+    "Ash road",
+    "On the verge",
+    "On verge by play parkland"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7818558",
+    "https://www.fixmystreet.com/report/8576982",
+    "https://www.fixmystreet.com/report/8780904"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.857984",
+   "long": "-3.049651",
+   "titles": [
+    "Across Middleton Road",
+    "Huge pot hole",
+    "Large pothole at the top of the bridge"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7863123",
+    "https://www.fixmystreet.com/report/8562903",
+    "https://www.fixmystreet.com/report/8578278"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.878181",
+   "long": "-3.024323",
+   "titles": [
+    "Hedge is overgrown obstructing footpath",
+    "Hedges to wide",
+    "Overgrown hedge blocking alley"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7912560",
+    "https://www.fixmystreet.com/report/7986330",
+    "https://www.fixmystreet.com/report/8109623"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.864103",
+   "long": "-3.041123",
+   "titles": [
+    "Damaged pedestrian barrier",
+    "Dog poo bin full",
+    "Safety railings damaged"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7946393",
+    "https://www.fixmystreet.com/report/8039307",
+    "https://www.fixmystreet.com/report/9311554"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.852053",
+   "long": "-3.11416",
+   "titles": [
+    "Blocked access",
+    "Dumped Building waste on the side of public access",
+    "Large rocks on the road and fuel spillage distruping neighbouring property"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7955440",
+    "https://www.fixmystreet.com/report/8331719",
+    "https://www.fixmystreet.com/report/8413764"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.882123",
+   "long": "-3.030223",
+   "titles": [
+    "Beside the bin in the layby",
+    "In the layby next to the litter bin",
+    "Litter bin overflowing"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7984518",
+    "https://www.fixmystreet.com/report/8480876",
+    "https://www.fixmystreet.com/report/9380688"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.863262",
+   "long": "-3.037348",
+   "titles": [
+    "Bins full",
+    "Bridge in front of the Skate Park gauged out",
+    "Litter bin at skate park full and over flowing"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8009275",
+    "https://www.fixmystreet.com/report/8230386",
+    "https://www.fixmystreet.com/report/8275818"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.871043",
+   "long": "-3.051658",
+   "titles": [
+    "Evident from photo",
+    "Litter bin and path overflowing with poo bags",
+    "On layby by gate past hillfort (llwyn road)"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8086072",
+    "https://www.fixmystreet.com/report/8714513",
+    "https://www.fixmystreet.com/report/9178786"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.852775",
+   "long": "-3.059144",
+   "titles": [
+    "Pothole formed near drain cover just off Zebra Crossing.",
+    "Pothole in pedestrian crossing.",
+    "Very deep dangerous pot holes"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8103043",
+    "https://www.fixmystreet.com/report/9431962",
+    "https://www.fixmystreet.com/report/9601976"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.861028",
+   "long": "-3.058234",
+   "titles": [
+    "Area worn away at edge of road",
+    "Blocked Drain",
+    "Dangerous Pothole"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8151205",
+    "https://www.fixmystreet.com/report/9180837",
+    "https://www.fixmystreet.com/report/9188013"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.885136",
+   "long": "-3.029867",
+   "titles": [
+    "1metre pothole on entrance to care home.",
+    "Drain totally blocked",
+    "Ongoing flooding at the entrance to RJAH hospital patient and staff car parks"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8162837",
+    "https://www.fixmystreet.com/report/8915320",
+    "https://www.fixmystreet.com/report/9088175"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.860202",
+   "long": "-3.031556",
+   "titles": [
+    "Grit bin is falling apart",
+    "Salt bin in disrepair",
+    "Zip-tied to the Croxon Rise street sign"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8412796",
+    "https://www.fixmystreet.com/report/8430237",
+    "https://www.fixmystreet.com/report/9439016"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.861442",
+   "long": "-3.057098",
+   "titles": [
+    "Damaged barrier is a trip hazard",
+    "Give way sign broken",
+    "Give way sign unlite"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8519672",
+    "https://www.fixmystreet.com/report/8676029",
+    "https://www.fixmystreet.com/report/9000480"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.865807",
+   "long": "-3.042871",
+   "titles": [
+    "Large deep pothole on junction",
+    "Large pot holes",
+    "Several Deep Potholes"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8604101",
+    "https://www.fixmystreet.com/report/8843882",
+    "https://www.fixmystreet.com/report/8956955"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.864608",
+   "long": "-3.054392",
+   "titles": [
+    "3 drains blocked",
+    "Blocked drain"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8612886",
+    "https://www.fixmystreet.com/report/9441083",
+    "https://www.fixmystreet.com/report/9441086"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.866332",
+   "long": "-3.046906",
+   "titles": [
+    "Grit bin SY11 1EX"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8634056",
+    "https://www.fixmystreet.com/report/8637430",
+    "https://www.fixmystreet.com/report/8693770"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.86427",
+   "long": "-3.052351",
+   "titles": [
+    "Big pile of loose dog poo on footpath",
+    "Grit bin sy11 1du",
+    "Salt/grit bin empty"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8656604",
+    "https://www.fixmystreet.com/report/8823951",
+    "https://www.fixmystreet.com/report/9598563"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.860243",
+   "long": "-3.059206",
+   "titles": [
+    "Abandoned refuse bin",
+    "On the pavement outside the Warehouse Arundel road",
+    "The solid white line is completely worn away"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8736880",
+    "https://www.fixmystreet.com/report/8736935",
+    "https://www.fixmystreet.com/report/9004489"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.858015",
+   "long": "-3.056505",
+   "titles": [
+    "Icy pavement",
+    "Streetlight Out",
+    "Streetlight out"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8823038",
+    "https://www.fixmystreet.com/report/9107610",
+    "https://www.fixmystreet.com/report/9107626"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.862003",
+   "long": "-3.054687",
+   "titles": [
+    "Car parked with no mot and full of rubbish",
+    "Crestwood court bins",
+    "Into bins"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8829349",
+    "https://www.fixmystreet.com/report/9431524",
+    "https://www.fixmystreet.com/report/9674916"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 1,
+   "lat": "52.866494",
+   "long": "-3.045879",
+   "titles": [
+    "2 bad potholes holding water",
+    "2 potholes holding water",
+    "Potholes"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8875384",
+    "https://www.fixmystreet.com/report/9086499",
+    "https://www.fixmystreet.com/report/9089042"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.858587",
+   "long": "-3.060507",
+   "titles": [
+    "Deep and multiple potholes - trip hazards as in pedestrian walkway",
+    "Lifted kerb stone",
+    "Loose & raised curb stone (trip hazard)"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8875886",
+    "https://www.fixmystreet.com/report/8875975",
+    "https://www.fixmystreet.com/report/8911794"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.857643",
+   "long": "-3.055116",
+   "titles": [
+    "Multiple deep potholes in the road",
+    "Pavement Pothole"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/8934845",
+    "https://www.fixmystreet.com/report/9554917",
+    "https://www.fixmystreet.com/report/9554928"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.852977",
+   "long": "-3.046668",
+   "titles": [
+    "Big pothole",
+    "Massive pothole",
+    "Pot hole at junction from industrial estate on to Shrewsbury Road"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9031428",
+    "https://www.fixmystreet.com/report/9415166",
+    "https://www.fixmystreet.com/report/9517089"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 0,
+   "lat": "52.857429",
+   "long": "-3.054525",
+   "titles": [
+    "Potholes close to each other",
+    "Several potholes close to each other",
+    "Several potholes in one location"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9107646",
+    "https://www.fixmystreet.com/report/9107650",
+    "https://www.fixmystreet.com/report/9107658"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 2,
+   "lat": "52.862045",
+   "long": "-3.056318",
+   "titles": [
+    "Fly Tipping Beside Bin",
+    "Flytipping beside litter bin",
+    "Litter Bin Overflowing"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9222817",
+    "https://www.fixmystreet.com/report/9222826",
+    "https://www.fixmystreet.com/report/9693146"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.859598",
+   "long": "-3.055069",
+   "titles": [
+    "Over flowing bins",
+    "Overflowing bin",
+    "Overflowing waste bins throughout the town centre"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9226448",
+    "https://www.fixmystreet.com/report/9227431",
+    "https://www.fixmystreet.com/report/9228726"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.882777",
+   "long": "-3.038253",
+   "titles": [
+    "Fir tree hanging in road",
+    "Growing pothole",
+    "Sunken drain"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9261540",
+    "https://www.fixmystreet.com/report/9261541",
+    "https://www.fixmystreet.com/report/9261545"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.852925",
+   "long": "-3.04657",
+   "titles": [
+    "1m long pothole at a busy junction",
+    "Large Pot Hole",
+    "Pothole right on the junction with Maesbury Rd"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9305009",
+    "https://www.fixmystreet.com/report/9330172",
+    "https://www.fixmystreet.com/report/9547011"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.873623",
+   "long": "-3.00226",
+   "titles": [
+    "Ongoing Overflowing Bins at Whittington Castle",
+    "Overflowing Bins and Waste Management Issues at Whittington Castle",
+    "Overflowing Bins located at Whittington Castle"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9409598",
+    "https://www.fixmystreet.com/report/9409930",
+    "https://www.fixmystreet.com/report/9410224"
+   ]
+  },
+  {
+   "count": 3,
+   "open": 3,
+   "lat": "52.863675",
+   "long": "-3.056702",
+   "titles": [
+    "Previous pothole repair starting to wear away",
+    "Small pothole",
+    "Uneven surface"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/9441139",
+    "https://www.fixmystreet.com/report/9441149",
+    "https://www.fixmystreet.com/report/9441159"
+   ]
+  }
+ ]
+}
