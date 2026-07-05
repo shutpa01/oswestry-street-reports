@@ -22,7 +22,7 @@ AGENCY = "2238"  # Shropshire Council
 CENTRE = (52.85737, -3.05359)  # Oswestry (user's map view)
 RADIUS_KM = 5.0
 WEEKS_BACK = 104
-USER_AGENT = "OswestryCivicAudit/1.0 (resident accountability project; +https://github.com/shutpa01/oswestry-street-reports)"
+USER_AGENT = "OswestryCivicAudit/1.0 (+https://github.com/shutpa01/oswestry-street-reports)"
 OUT_DIR = Path(__file__).parent / "data"
 
 FIELDS = [

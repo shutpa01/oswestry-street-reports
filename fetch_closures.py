@@ -14,7 +14,7 @@ from pathlib import Path
 
 DATA = Path(__file__).parent / "data"
 CACHE = DATA / "closure_cache.json"
-UA = "OswestryCivicAudit/1.0 (resident accountability project; +https://github.com/shutpa01/oswestry-street-reports)"
+UA = "OswestryCivicAudit/1.0 (+https://github.com/shutpa01/oswestry-street-reports)"
 STATE_RE = re.compile(r"State changed to: ([^<]+)")
 BANNER_RE = re.compile(r'class="banner banner--([a-z-]+)"')
 
