@@ -176,6 +176,29 @@ a {{ color:var(--ramp2) }}
 .foot {{ font-size:13px; color:var(--muted); margin-top:32px }}
 #tip {{ position:fixed; pointer-events:none; background:var(--ink); color:var(--page);
   padding:6px 10px; border-radius:6px; font-size:13px; display:none; z-index:9 }}
+.firsth2 {{ margin-top:20px }}
+@media (max-width:640px) {{
+  .wrap {{ padding:14px 10px 40px }}
+  h1 {{ font-size:22px }}
+  h2 {{ font-size:17px; margin:28px 0 10px }}
+  .sub {{ font-size:14px; margin-bottom:16px }}
+  .hero {{ font-size:40px }}
+  .card {{ padding:14px }}
+  .gcols {{ grid-template-columns:repeat(3,1fr); gap:8px }}
+  .gcol {{ padding:10px 8px }}
+  .glabel {{ font-size:11px }}
+  .gnum {{ font-size:19px; margin-right:3px }}
+  .grow {{ font-size:12px }}
+  .tiles {{ gap:8px }}
+  .tile {{ padding:10px 12px }}
+  .tvalue {{ font-size:23px }}
+  .tlabel {{ font-size:12px }}
+  .searchcard {{ padding:14px }}
+  .searchlabel {{ font-size:16px; margin-bottom:8px }}
+  .searchrow input {{ font:16px system-ui,sans-serif; padding:10px 12px }}
+  table {{ font-size:13px }}
+  th, td {{ padding:5px 6px }}
+}}
 </style>
 <div class="wrap">
 <h1>Oswestry street reports: is the council listening?</h1>
@@ -183,6 +206,9 @@ a {{ color:var(--ramp2) }}
 <a href="https://www.fixmystreet.com" target="_blank" rel="noopener">FixMyStreet</a>
 and sent to Shropshire Council. Data covers the seven Oswestry town-council wards,
 updated daily. Last update: {NOW:%d %B %Y}.</p>
+
+<h2 class="firsth2">Reported vs solved</h2>
+<div class="gcols" id="grid"></div>
 
 <div class="card searchcard">
   <label class="searchlabel" for="pcbox">Look up your postcode or street</label>
@@ -217,9 +243,6 @@ report, where you can add an update or photo.</p>
 <div class="card tablewrap" id="reportcard"></div>
 
 <div class="tiles" id="tiles"></div>
-
-<h2>Reported vs solved</h2>
-<div class="gcols" id="grid"></div>
 
 <h2>What does &ldquo;closed&rdquo; actually mean?</h2>
 <p class="note">&ldquo;Closed&rdquo; on FixMyStreet does not always mean fixed. This is
@@ -462,11 +485,15 @@ function renderReports(rows, anyFilter) {{
   card.innerHTML = h;
 }}
 
+var SHORT = ['<1 mo','1\\u20133 mo','3\\u20136 mo','6\\u201312 mo','>1 yr'];
 function drawChart(open) {{
+  window._lastOpen = open;
   var counts = BUCKETS.map(function(b) {{
     return open.filter(function(r){{return r[1]>=b[1] && r[1]<b[2]}}).length; }});
   var maxC = Math.max.apply(null, counts) || 1;
-  var LW = 120, BW = 560, BH = 24, GAP = 14, PR = 60;
+  var compact = (document.getElementById('chartcard').clientWidth || 600) < 480;
+  var LW = compact ? 64 : 120, BW = compact ? 240 : 560, BH = 24, GAP = 14,
+      PR = compact ? 46 : 60;
   var W = LW + BW + PR, H = BUCKETS.length*(BH+GAP) + 30;
   var step = [1,2,5,10,25,50,100,200,500].filter(function(s){{return maxC/s <= 6}})[0] || 500;
   var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Open reports by age"' +
@@ -479,8 +506,8 @@ function drawChart(open) {{
   counts.forEach(function(n, i) {{
     var y = i*(BH+GAP) + 6;
     var w = Math.max(n/maxC*BW, 2), rx = Math.min(4, w/2);
-    svg += '<text x="'+(LW-10)+'" y="'+(y+BH/2+4)+'" text-anchor="end" class="blabel">' +
-           BUCKETS[i][0] + '</text>' +
+    svg += '<text x="'+(LW-8)+'" y="'+(y+BH/2+4)+'" text-anchor="end" class="blabel">' +
+           (compact ? SHORT[i] : BUCKETS[i][0]) + '</text>' +
            '<path class="bar" data-name="'+BUCKETS[i][0]+'" data-n="'+n+'" fill="var(--ramp'+i+')" d="' +
            'M'+LW+','+y+' h'+(w-rx)+' a'+rx+','+rx+' 0 0 1 '+rx+','+rx+' v'+(BH-2*rx) +
            ' a'+rx+','+rx+' 0 0 1 -'+rx+','+rx+' h-'+(w-rx)+' z"/>' +
@@ -500,6 +527,12 @@ function drawChart(open) {{
     b.addEventListener('mouseleave', function() {{ tip.style.display = 'none'; }});
   }});
 }}
+
+var _rsz;
+window.addEventListener('resize', function() {{
+  clearTimeout(_rsz);
+  _rsz = setTimeout(function() {{ if (window._lastOpen) drawChart(window._lastOpen); }}, 200);
+}});
 
 wsel.addEventListener('change', function() {{
   sel.value=''; document.getElementById('pcbox').value=''; render(); }});
