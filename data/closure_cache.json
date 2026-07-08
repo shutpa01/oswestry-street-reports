@@ -18037,5 +18037,37 @@
 "Internal referral"
 ],
 "banner": "closed"
+},
+"8745918": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9021215": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9727456": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9741288": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
 }
 }
