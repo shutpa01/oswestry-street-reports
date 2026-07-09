@@ -18069,5 +18069,26 @@
 "not the council&#39;s responsibility"
 ],
 "banner": "closed"
+},
+"9614386": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9699443": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9746877": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
 }
 }
