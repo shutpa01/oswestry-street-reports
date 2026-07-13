@@ -18161,5 +18161,39 @@
 "not the council&#39;s responsibility"
 ],
 "banner": "closed"
+},
+"7445831": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"7970445": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"8761061": {
+"final_state": "Fixed,\n        08:37 today",
+"states": [
+"Action scheduled",
+"Fixed",
+"Fixed,\n        08:37 today"
+],
+"banner": "fixed"
+},
+"9649912": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
 }
 }
