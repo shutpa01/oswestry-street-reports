@@ -18195,5 +18195,26 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"6472696": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"6702990": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"6739457": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
 }
 }
