@@ -64,21 +64,13 @@
     they've been waiting — live from FixMyStreet, computed on your own device.</p>
 
   <div class="card">
-    <div class="row">
-      <div>
-        <label for="council">Your council</label>
-        <select id="council"><option value="">— choose a council —</option></select>
-        <p class="hint">The authority that FixMyStreet sends reports to.</p>
-      </div>
-      <div>
-        <label for="postcode">Postcode (optional)</label>
-        <input id="postcode" placeholder="e.g. SY11 1PZ" autocomplete="off">
-        <p class="hint">Fills in your council and centres a radius on you.</p>
-      </div>
-    </div>
+    <label for="postcode">Where do you want to check?</label>
+    <input id="postcode" placeholder="Town, street or postcode — e.g. Oswestry or SY11 2AZ" autocomplete="off">
+    <p class="hint">Type a place just like on FixMyStreet — a town, a street, or a postcode. We centre the search on it.</p>
+
     <div class="row" style="margin-top:14px">
       <div>
-        <label for="radius">Radius around postcode</label>
+        <label for="radius">Search radius</label>
         <select id="radius">
           <option value="2">2 km</option>
           <option value="5" selected>5 km</option>
@@ -86,10 +78,12 @@
           <option value="15">15 km</option>
         </select>
       </div>
-      <div style="align-self:end">
-        <button id="go">Generate my area report</button>
+      <div>
+        <label for="council">…or a whole council area</label>
+        <select id="council"><option value="">— choose a council —</option></select>
       </div>
     </div>
+    <button id="go">Generate my area report</button>
     <div id="err" class="err"></div>
     <div id="progress">
       <div class="bar"><i id="progbar"></i></div>
@@ -154,6 +148,17 @@ function norm(s){return (s||"").toLowerCase().replace(/[^a-z0-9]+/g," ")
   .split(" ").filter(w=>w&&!["council","county","borough","district","city","of","the","corporation","and","royal"].includes(w)).join(" ").trim();}
 function matchCouncil(names){for(const n of names){if(!n)continue;const q=norm(n);
   const hit=COUNCILS.find(c=>norm(c.name)===q); if(hit)return hit;} return null;}
+
+// Full UK postcode (with or without the space); anything else is treated as a place name.
+const POSTCODE_RE=/^[A-Za-z]{1,2}\d[A-Za-z\d]?\s*\d[A-Za-z]{2}$/;
+// Geocode a town / street / place name via OpenStreetMap (UK only), like FixMyStreet.
+async function geocodePlace(q){
+  const url="https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=gb&q="+encodeURIComponent(q);
+  const res=await fetch(url);
+  const arr=res.ok?await res.json():[];
+  if(!arr.length) throw new Error(`Couldn't find "${q}". Try a nearby town, a street, or a postcode.`);
+  return [+arr[0].lat,+arr[0].lon];
+}
 
 // Turn one /around page (pins + reports_list HTML) into report objects.
 function parsePage(d){
@@ -233,22 +238,26 @@ async function run(){
 
   try{
     if(pc){
-      const g=await fetch("https://api.postcodes.io/postcodes/"+encodeURIComponent(pc.replace(/\s+/g,"")));
-      if(!g.ok) throw new Error("Postcode not found — check it, or choose a council.");
-      const d=(await g.json()).result;
-      centre=[d.latitude,d.longitude];
-      const m=matchCouncil([d.admin_county,d.admin_district]); if(m) sel.value=String(m.id);
-      scopeName=`within ${radius} km of ${pc.toUpperCase()}`;
+      if(POSTCODE_RE.test(pc)){
+        // Looks like a full postcode — precise lookup (also tells us the council).
+        const g=await fetch("https://api.postcodes.io/postcodes/"+encodeURIComponent(pc.replace(/\s+/g,"")));
+        if(!g.ok) throw new Error(`Postcode "${pc.toUpperCase()}" not found — check it, or type a town name.`);
+        const d=(await g.json()).result;
+        centre=[d.latitude,d.longitude];
+        const m=matchCouncil([d.admin_county,d.admin_district]); if(m) sel.value=String(m.id);
+        scopeName=`within ${radius} km of ${pc.toUpperCase()}`;
+      } else {
+        // A town, street or place name — geocode it, exactly like FixMyStreet does.
+        centre=await geocodePlace(pc);
+        scopeName=`within ${radius} km of ${pc}`;
+      }
     } else if(sel.value){
-      // Council chosen without a postcode: locate its area via OpenStreetMap.
+      // Council chosen with no place typed: centre on the council's main area.
       const name=(COUNCILS.find(c=>String(c.id)===sel.value)||{}).name||"";
-      const q=name.replace(/\bCouncil\b/i,"").trim()+", UK";
-      const nm=await fetch("https://nominatim.openstreetmap.org/search?format=json&limit=1&q="+encodeURIComponent(q));
-      const arr=await nm.json();
-      if(!arr.length) throw new Error("Couldn't locate that council — please enter a postcode instead.");
-      centre=[+arr[0].lat,+arr[0].lon]; scopeName=`within ${radius} km of ${name.replace(/\bCouncil\b/i,"").trim()}`;
+      centre=await geocodePlace(name.replace(/\bCouncil\b/i,"").trim());
+      scopeName=`within ${radius} km of ${name.replace(/\bCouncil\b/i,"").trim()}`;
     } else {
-      throw new Error("Enter a postcode, or choose a council.");
+      throw new Error("Type a town, street or postcode — or pick a council.");
     }
 
     $("progress").style.display="block"; $("go").disabled=true;
