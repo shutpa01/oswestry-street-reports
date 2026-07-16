@@ -200,7 +200,7 @@ const BUCKETS=[["Under 1 month",0,30,""],["1–3 months",30,90,""],["3–6 month
 function render(reports, scope){
   const now=Date.now();
   const A=reports.map(r=>({r,age:Math.floor((now-r.reported)/864e5)}))
-    .filter(x=>x.age>=0).sort((a,b)=>b.age-a.age);
+    .filter(x=>x.age>=0).sort((a,b)=>a.age-b.age); // newest first
   $("openCount").textContent=A.length.toLocaleString();
   $("scopeLabel").textContent="open reports "+scope;
   $("over1y").textContent=A.filter(x=>x.age>365).length;
