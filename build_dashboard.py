@@ -207,6 +207,9 @@ a {{ color:var(--ramp2) }}
 and sent to Shropshire Council. Data covers the seven Oswestry town-council wards,
 updated daily. Last update: {NOW:%d %B %Y}.</p>
 
+<p class="sub" style="margin-top:12px">📍 <strong>Live somewhere else in the UK?</strong>
+<a href="anywhere.html">Check the open street reports for your own area &rarr;</a></p>
+
 <h2 class="firsth2">Reported vs solved</h2>
 <div class="gcols" id="grid"></div>
 

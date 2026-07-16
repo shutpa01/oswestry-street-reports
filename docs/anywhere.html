@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check your area — Street Report Accountability</title>
+<style>
+  :root{
+    --bg:#0f1720; --panel:#182430; --ink:#e8eef4; --muted:#9fb0c0;
+    --line:#263644; --accent:#3ba1ff; --warn:#ffb020; --bad:#ff5d5d; --good:#37c26b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    background:var(--bg);color:var(--ink)}
+  .wrap{max-width:920px;margin:0 auto;padding:20px 16px 64px}
+  h1{font-size:1.6rem;margin:.2em 0 .1em}
+  .sub{color:var(--muted);margin:0 0 20px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}
+  label{display:block;font-weight:600;margin:0 0 6px;font-size:.9rem}
+  select,input{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);
+    background:#0e1620;color:var(--ink);font-size:1rem}
+  .row{display:grid;grid-template-columns:1fr;gap:14px}
+  @media(min-width:640px){.row{grid-template-columns:1fr 1fr}}
+  .hint{color:var(--muted);font-size:.82rem;margin:4px 0 0}
+  button{margin-top:16px;width:100%;padding:13px;border:0;border-radius:10px;
+    background:var(--accent);color:#04121f;font-weight:700;font-size:1.05rem;cursor:pointer}
+  button:disabled{opacity:.5;cursor:default}
+  .or{text-align:center;color:var(--muted);margin:10px 0;font-size:.85rem}
+  #progress{display:none;margin-top:14px}
+  .bar{height:8px;background:#0e1620;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+  .bar > i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+  #progress p{color:var(--muted);font-size:.85rem;margin:8px 0 0}
+  #results{display:none}
+  .hero{font-size:3rem;font-weight:800;line-height:1;margin:0}
+  .hero small{display:block;font-size:.9rem;font-weight:500;color:var(--muted);margin-top:6px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+  .stat{background:#0e1620;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .stat b{display:block;font-size:1.5rem}
+  .stat span{font-size:.72rem;color:var(--muted)}
+  .chart{margin-top:6px}
+  .chart .b{display:grid;grid-template-columns:110px 1fr 46px;align-items:center;gap:8px;margin:5px 0;font-size:.82rem}
+  .chart .b i{height:20px;background:var(--accent);border-radius:4px;display:block;min-width:2px}
+  .chart .b.old i{background:var(--bad)}
+  .chart .b.mid i{background:var(--warn)}
+  #search{margin:6px 0 10px}
+  .rep{border-top:1px solid var(--line);padding:10px 0}
+  .rep a{color:var(--accent);text-decoration:none;font-weight:600}
+  .rep .meta{color:var(--muted);font-size:.8rem;margin-top:2px}
+  .pill{display:inline-block;padding:1px 8px;border-radius:20px;font-size:.72rem;margin-left:6px}
+  .pill.old{background:rgba(255,93,93,.15);color:var(--bad)}
+  .pill.mid{background:rgba(255,176,32,.15);color:var(--warn)}
+  .foot{color:var(--muted);font-size:.8rem;margin-top:26px;border-top:1px solid var(--line);padding-top:14px}
+  .foot a{color:var(--accent)}
+  .err{color:var(--bad);margin-top:10px}
+  .badge{display:inline-block;background:rgba(55,194,107,.14);color:var(--good);
+    border:1px solid rgba(55,194,107,.4);border-radius:20px;padding:3px 12px;font-size:.78rem;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">🔒 Nothing stored — runs entirely in your browser</span>
+  <h1>Check your area's street reports</h1>
+  <p class="sub">See how many street/highway reports are still open in your area, and how long
+    they've been waiting — live from FixMyStreet, computed on your own device.</p>
+
+  <div class="card">
+    <div class="row">
+      <div>
+        <label for="council">Your council</label>
+        <select id="council"><option value="">— choose a council —</option></select>
+        <p class="hint">The authority that FixMyStreet sends reports to.</p>
+      </div>
+      <div>
+        <label for="postcode">Postcode (optional)</label>
+        <input id="postcode" placeholder="e.g. SY11 1PZ" autocomplete="off">
+        <p class="hint">Fills in your council and centres a radius on you.</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top:14px">
+      <div>
+        <label for="radius">Radius around postcode</label>
+        <select id="radius">
+          <option value="2">2 km</option>
+          <option value="5" selected>5 km</option>
+          <option value="10">10 km</option>
+          <option value="15">15 km</option>
+        </select>
+      </div>
+      <div style="align-self:end">
+        <button id="go">Generate my area report</button>
+      </div>
+    </div>
+    <div id="err" class="err"></div>
+    <div id="progress">
+      <div class="bar"><i id="progbar"></i></div>
+      <p id="progtext">Contacting FixMyStreet…</p>
+    </div>
+  </div>
+
+  <div id="results" class="card">
+    <p class="hero"><span id="openCount">0</span><small id="scopeLabel"></small></p>
+    <div class="stats">
+      <div class="stat"><b id="over1y">0</b><span>waiting &gt; 1 year</span></div>
+      <div class="stat"><b id="over6m">0</b><span>waiting &gt; 6 months</span></div>
+      <div class="stat"><b id="avgWait">0</b><span>average days open</span></div>
+    </div>
+    <h3 style="margin:22px 0 4px">How long reports have been waiting</h3>
+    <div class="chart" id="chart"></div>
+    <h3 style="margin:22px 0 4px">Open reports</h3>
+    <input id="search" placeholder="Search title or category…">
+    <div id="list"></div>
+  </div>
+
+  <div class="foot">
+    Data © <a href="https://www.fixmystreet.com" target="_blank" rel="noopener">FixMyStreet</a>
+    (mySociety), fetched live from their public map feed. Postcode lookup by
+    <a href="https://postcodes.io" target="_blank" rel="noopener">postcodes.io</a>;
+    council lookup by <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a>.
+    Nothing about you is stored — reports are fetched fresh each time and calculated in your browser.
+    "Open" counts every currently-open report within the chosen area; "reported" dates come from FixMyStreet.
+  </div>
+</div>
+
+<script>
+const COUNCILS = [{"id": 2650, "name": "Aberdeen City Council"}, {"id": 2648, "name": "Aberdeenshire Council"}, {"id": 2464, "name": "Adur District Council"}, {"id": 2281, "name": "Amber Valley Borough Council"}, {"id": 2550, "name": "Angus Council"}, {"id": 2647, "name": "Argyll and Bute Council"}, {"id": 2463, "name": "Arun District Council"}, {"id": 2413, "name": "Ashfield District Council"}, {"id": 2353, "name": "Ashford Borough Council"}, {"id": 2441, "name": "Babergh District Council"}, {"id": 2511, "name": "Barking and Dagenham Borough Council"}, {"id": 2489, "name": "Barnet Borough Council"}, {"id": 2513, "name": "Barnsley Borough Council"}, {"id": 2319, "name": "Basildon Borough Council"}, {"id": 2327, "name": "Basingstoke and Deane Borough Council"}, {"id": 2410, "name": "Bassetlaw District Council"}, {"id": 2551, "name": "Bath and North East Somerset Council"}, {"id": 2253, "name": "Bedford Borough Council"}, {"id": 2216, "name": "Bedfordshire County Council"}, {"id": 14333, "name": "Belfast City Council"}, {"id": 2514, "name": "Birmingham City Council"}, {"id": 2376, "name": "Blaby District Council"}, {"id": 2552, "name": "Blackburn with Darwen Borough Council"}, {"id": 2553, "name": "Blackpool Borough Council"}, {"id": 2554, "name": "Blaenau Gwent Council"}, {"id": 2282, "name": "Bolsover District Council"}, {"id": 2515, "name": "Bolton Borough Council"}, {"id": 2382, "name": "Boston Borough Council"}, {"id": 2556, "name": "Bracknell Forest Council"}, {"id": 2516, "name": "Bradford City Council"}, {"id": 2317, "name": "Braintree District Council"}, {"id": 2390, "name": "Breckland District Council"}, {"id": 2488, "name": "Brent Council"}, {"id": 2309, "name": "Brentwood Borough Council"}, {"id": 2592, "name": "Bridgend Council"}, {"id": 2614, "name": "Brighton and Hove City Council"}, {"id": 2561, "name": "Bristol City Council"}, {"id": 2626, "name": "Broadland District Council"}, {"id": 2482, "name": "Bromley Council"}, {"id": 2477, "name": "Bromsgrove District Council"}, {"id": 2340, "name": "Broxbourne Borough Council"}, {"id": 2415, "name": "Broxtowe Borough Council"}, {"id": 2217, "name": "Buckinghamshire Council"}, {"id": 2371, "name": "Burnley Borough Council"}, {"id": 2517, "name": "Bury Borough Council"}, {"id": 2558, "name": "Caerphilly Council"}, {"id": 2518, "name": "Calderdale Borough Council"}, {"id": 2263, "name": "Cambridge City Council"}, {"id": 2218, "name": "Cambridgeshire County Council"}, {"id": 2505, "name": "Camden Borough Council"}, {"id": 2438, "name": "Cannock Chase District Council"}, {"id": 2354, "name": "Canterbury City Council"}, {"id": 2639, "name": "Cardiff Council"}, {"id": 2604, "name": "Carmarthenshire Council"}, {"id": 2320, "name": "Castle Point Borough Council"}, {"id": 2640, "name": "Ceredigion Council"}, {"id": 2377, "name": "Charnwood Borough Council"}, {"id": 2314, "name": "Chelmsford City Council"}, {"id": 2326, "name": "Cheltenham Borough Council"}, {"id": 2419, "name": "Cherwell District Council"}, {"id": 2219, "name": "Cheshire County Council"}, {"id": 2284, "name": "Chesterfield Borough Council"}, {"id": 2465, "name": "Chichester District Council"}, {"id": 2362, "name": "Chorley Borough Council"}, {"id": 2521, "name": "City of Doncaster Council"}, {"id": 2512, "name": "City of London Corporation"}, {"id": 2519, "name": "City of Wolverhampton Council"}, {"id": 2569, "name": "Clackmannanshire Council"}, {"id": 2315, "name": "Colchester Borough Council"}, {"id": 2646, "name": "Comhairle nan Eilean Siar"}, {"id": 2570, "name": "Conwy Council"}, {"id": 2250, "name": "Cornwall Council"}, {"id": 2322, "name": "Cotswold District Council"}, {"id": 2520, "name": "Coventry City Council"}, {"id": 2469, "name": "Crawley Borough Council"}, {"id": 2481, "name": "Croydon Borough Council"}, {"id": 2341, "name": "Dacorum Borough Council"}, {"id": 2572, "name": "Darlington Borough Council"}, {"id": 2358, "name": "Dartford Borough Council"}, {"id": 2602, "name": "Denbighshire Council"}, {"id": 2562, "name": "Derby City Council"}, {"id": 2221, "name": "Derbyshire County Council"}, {"id": 2283, "name": "Derbyshire Dales District Council"}, {"id": 2249, "name": "Devon County Council"}, {"id": 2355, "name": "Dover District Council"}, {"id": 2522, "name": "Dudley Borough Council"}, {"id": 2656, "name": "Dumfries and Galloway Council"}, {"id": 2573, "name": "Dundee City Council"}, {"id": 2223, "name": "Durham County Council"}, {"id": 2484, "name": "Ealing Borough Council"}, {"id": 2574, "name": "East Ayrshire Council"}, {"id": 2261, "name": "East Cambridgeshire District Council"}, {"id": 2286, "name": "East Devon District Council"}, {"id": 2575, "name": "East Dunbartonshire Council"}, {"id": 2330, "name": "East Hampshire District Council"}, {"id": 2342, "name": "East Hertfordshire District Council"}, {"id": 2384, "name": "East Lindsey District Council"}, {"id": 2652, "name": "East Lothian Council"}, {"id": 2576, "name": "East Renfrewshire Council"}, {"id": 2577, "name": "East Riding of Yorkshire Council"}, {"id": 2437, "name": "East Staffordshire Borough Council"}, {"id": 2224, "name": "East Sussex County Council"}, {"id": 2307, "name": "Eastbourne Borough Council"}, {"id": 2329, "name": "Eastleigh Borough Council"}, {"id": 2651, "name": "Edinburgh City Council"}, {"id": 2455, "name": "Elmbridge Borough Council"}, {"id": 2495, "name": "Enfield Council"}, {"id": 2311, "name": "Epping Forest District Council"}, {"id": 2457, "name": "Epsom and Ewell Borough Council"}, {"id": 2279, "name": "Erewash Borough Council"}, {"id": 2225, "name": "Essex County Council"}, {"id": 2290, "name": "Exeter City Council"}, {"id": 2578, "name": "Falkirk Council"}, {"id": 2335, "name": "Fareham Borough Council"}, {"id": 2259, "name": "Fenland District Council"}, {"id": 2649, "name": "Fife Council"}, {"id": 2605, "name": "Flintshire Council"}, {"id": 2349, "name": "Folkestone and Hythe District Council"}, {"id": 2321, "name": "Forest of Dean District Council"}, {"id": 2365, "name": "Fylde Borough Council"}, {"id": 2523, "name": "Gateshead Borough Council"}, {"id": 2412, "name": "Gedling Borough Council"}, {"id": 2579, "name": "Glasgow City Council"}, {"id": 2325, "name": "Gloucester City Council"}, {"id": 2226, "name": "Gloucestershire County Council"}, {"id": 2334, "name": "Gosport Borough Council"}, {"id": 2359, "name": "Gravesham Borough Council"}, {"id": 2387, "name": "Great Yarmouth Borough Council"}, {"id": 2452, "name": "Guildford Borough Council"}, {"id": 2638, "name": "Gwynedd Council"}, {"id": 2508, "name": "Hackney Council"}, {"id": 2580, "name": "Halton Borough Council"}, {"id": 2502, "name": "Hammersmith and Fulham Borough Council"}, {"id": 2227, "name": "Hampshire County Council"}, {"id": 2375, "name": "Harborough District Council"}, {"id": 2509, "name": "Haringey Borough Council"}, {"id": 2318, "name": "Harlow District Council"}, {"id": 2487, "name": "Harrow Borough Council"}, {"id": 2333, "name": "Hart District Council"}, {"id": 2581, "name": "Hartlepool Borough Council"}, {"id": 2308, "name": "Hastings Borough Council"}, {"id": 2336, "name": "Havant Borough Council"}, {"id": 2485, "name": "Havering Borough Council"}, {"id": 2571, "name": "Herefordshire Council"}, {"id": 2228, "name": "Hertfordshire County Council"}, {"id": 2339, "name": "Hertsmere Borough Council"}, {"id": 2277, "name": "High Peak Borough Council"}, {"id": 2643, "name": "Highland Council"}, {"id": 2486, "name": "Hillingdon Borough Council"}, {"id": 2372, "name": "Hinckley and Bosworth Borough Council"}, {"id": 2467, "name": "Horsham District Council"}, {"id": 2483, "name": "Hounslow Highways"}, {"id": 2563, "name": "Hull City Council"}, {"id": 2262, "name": "Huntingdonshire District Council"}, {"id": 2370, "name": "Hyndburn Borough Council"}, {"id": 2582, "name": "Inverclyde Council"}, {"id": 2446, "name": "Ipswich Borough Council"}, {"id": 2637, "name": "Isle of Anglesey Council"}, {"id": 2636, "name": "Isle of Wight Council"}, {"id": 2251, "name": "Isles of Scilly Council"}, {"id": 2507, "name": "Islington Borough Council"}, {"id": 2503, "name": "Kensington and Chelsea Borough Council"}, {"id": 2229, "name": "Kent County Council"}, {"id": 2389, "name": "King&#39;s Lynn and West Norfolk Borough Council"}, {"id": 2524, "name": "Kirklees Borough Council"}, {"id": 2525, "name": "Knowsley Borough Council"}, {"id": 2490, "name": "Lambeth Borough Council"}, {"id": 2230, "name": "Lancashire County Council"}, {"id": 2361, "name": "Lancaster City Council"}, {"id": 2526, "name": "Leeds City Council"}, {"id": 2564, "name": "Leicester City Council"}, {"id": 2231, "name": "Leicestershire County Council"}, {"id": 2304, "name": "Lewes District Council"}, {"id": 2492, "name": "Lewisham Borough Council"}, {"id": 2434, "name": "Lichfield District Council"}, {"id": 2385, "name": "Lincoln City Council"}, {"id": 2232, "name": "Lincolnshire County Council"}, {"id": 2527, "name": "Liverpool City Council"}, {"id": 2494, "name": "London Borough of Bexley"}, {"id": 2583, "name": "Luton Borough Council"}, {"id": 2356, "name": "Maidstone Borough Council"}, {"id": 2316, "name": "Maldon District Council"}, {"id": 2474, "name": "Malvern Hills District Council"}, {"id": 2528, "name": "Manchester City Council"}, {"id": 2416, "name": "Mansfield District Council"}, {"id": 2584, "name": "Medway Council"}, {"id": 2374, "name": "Melton Borough Council"}, {"id": 2585, "name": "Merthyr Tydfil Council"}, {"id": 2500, "name": "Merton Council"}, {"id": 2289, "name": "Mid Devon District Council"}, {"id": 2445, "name": "Mid Suffolk District Council"}, {"id": 2466, "name": "Mid Sussex District Council"}, {"id": 2586, "name": "Middlesbrough Council"}, {"id": 2587, "name": "Midlothian Council"}, {"id": 2588, "name": "Milton Keynes Council"}, {"id": 2454, "name": "Mole Valley District Council"}, {"id": 2603, "name": "Monmouthshire Council"}, {"id": 2644, "name": "Moray Council"}, {"id": 2560, "name": "Neath Port Talbot Council"}, {"id": 2328, "name": "New Forest District Council"}, {"id": 2414, "name": "Newark and Sherwood District Council"}, {"id": 2529, "name": "Newcastle City Council"}, {"id": 2435, "name": "Newcastle-under-Lyme Borough Council"}, {"id": 2510, "name": "Newham Borough Council"}, {"id": 2559, "name": "Newport Council"}, {"id": 2233, "name": "Norfolk County Council"}, {"id": 2654, "name": "North Ayrshire Council"}, {"id": 2285, "name": "North Devon Council"}, {"id": 2280, "name": "North East Derbyshire District Council"}, {"id": 2589, "name": "North East Lincolnshire Council"}, {"id": 2345, "name": "North Hertfordshire District Council"}, {"id": 2383, "name": "North Kesteven District Council"}, {"id": 2590, "name": "North Lanarkshire Council"}, {"id": 2591, "name": "North Lincolnshire Council"}, {"id": 2386, "name": "North Norfolk District Council"}, {"id": 2642, "name": "North Somerset Council"}, {"id": 2530, "name": "North Tyneside Borough Council"}, {"id": 2458, "name": "North Warwickshire Borough Council"}, {"id": 2373, "name": "North West Leicestershire District Council"}, {"id": 2235, "name": "North Yorkshire Council"}, {"id": 2248, "name": "Northumberland County Council"}, {"id": 2391, "name": "Norwich City Council"}, {"id": 2565, "name": "Nottingham City Council"}, {"id": 2236, "name": "Nottinghamshire County Council"}, {"id": 2462, "name": "Nuneaton and Bedworth Borough Council"}, {"id": 2378, "name": "Oadby and Wigston Borough Council"}, {"id": 2531, "name": "Oldham Borough Council"}, {"id": 2645, "name": "Orkney Islands Council"}, {"id": 2421, "name": "Oxford City Council"}, {"id": 2237, "name": "Oxfordshire County Council"}, {"id": 2641, "name": "Pembrokeshire Council"}, {"id": 2368, "name": "Pendle Borough Council"}, {"id": 2593, "name": "Perth and Kinross Council"}, {"id": 2566, "name": "Peterborough City Council"}, {"id": 2658, "name": "Plymouth City Council"}, {"id": 2657, "name": "Portsmouth City Council"}, {"id": 2595, "name": "Powys Council"}, {"id": 2366, "name": "Preston City Council"}, {"id": 2596, "name": "Reading Borough Council"}, {"id": 2497, "name": "Redbridge Borough Council"}, {"id": 2597, "name": "Redcar and Cleveland Borough Council"}, {"id": 2479, "name": "Redditch Borough Council"}, {"id": 2453, "name": "Reigate and Banstead Borough Council"}, {"id": 2598, "name": "Renfrewshire Council"}, {"id": 2599, "name": "Rhondda Cynon Taf Council"}, {"id": 2369, "name": "Ribble Valley Borough Council"}, {"id": 2499, "name": "Richmond upon Thames Borough Council"}, {"id": 2532, "name": "Rochdale Borough Council"}, {"id": 2310, "name": "Rochford District Council"}, {"id": 2364, "name": "Rossendale Borough Council"}, {"id": 2305, "name": "Rother District Council"}, {"id": 2533, "name": "Rotherham Borough Council"}, {"id": 2493, "name": "Royal Borough of Greenwich"}, {"id": 2480, "name": "Royal Borough of Kingston upon Thames"}, {"id": 2459, "name": "Rugby Borough Council"}, {"id": 2451, "name": "Runnymede Borough Council"}, {"id": 2411, "name": "Rushcliffe Borough Council"}, {"id": 2337, "name": "Rushmoor Borough Council"}, {"id": 2600, "name": "Rutland County Council"}, {"id": 2534, "name": "Salford City Council"}, {"id": 2535, "name": "Sandwell Borough Council"}, {"id": 2601, "name": "Scottish Borders Council"}, {"id": 2536, "name": "Sefton Borough Council"}, {"id": 2350, "name": "Sevenoaks District Council"}, {"id": 2537, "name": "Sheffield City Council"}, {"id": 2653, "name": "Shetland Islands Council"}, {"id": 2238, "name": "Shropshire Council"}, {"id": 2606, "name": "Slough Borough Council"}, {"id": 2538, "name": "Solihull Borough Council"}, {"id": 2239, "name": "Somerset Council"}, {"id": 2655, "name": "South Ayrshire Council"}, {"id": 2260, "name": "South Cambridgeshire District Council"}, {"id": 2278, "name": "South Derbyshire District Council"}, {"id": 2608, "name": "South Gloucestershire Council"}, {"id": 2629, "name": "South Hams District Council"}, {"id": 2381, "name": "South Holland District Council"}, {"id": 2380, "name": "South Kesteven District Council"}, {"id": 2609, "name": "South Lanarkshire Council"}, {"id": 2388, "name": "South Norfolk District Council"}, {"id": 2418, "name": "South Oxfordshire District Council"}, {"id": 2363, "name": "South Ribble Borough Council"}, {"id": 2433, "name": "South Staffordshire District Council"}, {"id": 2539, "name": "South Tyneside Borough Council"}, {"id": 2567, "name": "Southampton City Council"}, {"id": 2607, "name": "Southend-on-Sea City Council"}, {"id": 2491, "name": "Southwark Council"}, {"id": 2456, "name": "Spelthorne Borough Council"}, {"id": 2343, "name": "St Albans City Council"}, {"id": 2541, "name": "St Helens Borough Council"}, {"id": 2436, "name": "Stafford Borough Council"}, {"id": 2240, "name": "Staffordshire County Council"}, {"id": 2432, "name": "Staffordshire Moorlands District Council"}, {"id": 2347, "name": "Stevenage Borough Council"}, {"id": 2610, "name": "Stirling Council"}, {"id": 2540, "name": "Stockport Borough Council"}, {"id": 2611, "name": "Stockton-on-Tees Borough Council"}, {"id": 2568, "name": "Stoke-on-Trent City Council"}, {"id": 2461, "name": "Stratford-on-Avon District Council"}, {"id": 2323, "name": "Stroud District Council"}, {"id": 2241, "name": "Suffolk County Council"}, {"id": 2542, "name": "Sunderland City Council"}, {"id": 2242, "name": "Surrey County Council"}, {"id": 2450, "name": "Surrey Heath Borough Council"}, {"id": 2498, "name": "Sutton Council"}, {"id": 2357, "name": "Swale Borough Council"}, {"id": 2549, "name": "Swansea Council"}, {"id": 2612, "name": "Swindon Borough Council"}, {"id": 2543, "name": "Tameside Borough Council"}, {"id": 2439, "name": "Tamworth Borough Council"}, {"id": 2448, "name": "Tandridge District Council"}, {"id": 2287, "name": "Teignbridge District Council"}, {"id": 2613, "name": "Telford and Wrekin Council"}, {"id": 2312, "name": "Tendring District Council"}, {"id": 2332, "name": "Test Valley Borough Council"}, {"id": 2324, "name": "Tewkesbury Borough Council"}, {"id": 2352, "name": "Thanet District Council"}, {"id": 2338, "name": "Three Rivers District Council"}, {"id": 2615, "name": "Thurrock Borough Council"}, {"id": 2351, "name": "Tonbridge and Malling Borough Council"}, {"id": 2617, "name": "Torbay Borough Council"}, {"id": 2616, "name": "Torfaen Council"}, {"id": 2630, "name": "Torridge District Council"}, {"id": 2506, "name": "Tower Hamlets Borough Council"}, {"id": 2544, "name": "Trafford Borough Council"}, {"id": 2348, "name": "Tunbridge Wells Borough Council"}, {"id": 2313, "name": "Uttlesford District Council"}, {"id": 2557, "name": "Vale of Glamorgan Council"}, {"id": 2417, "name": "Vale of White Horse District Council"}, {"id": 2545, "name": "Wakefield City Council"}, {"id": 2546, "name": "Walsall Borough Council"}, {"id": 2496, "name": "Waltham Forest Borough Council"}, {"id": 2501, "name": "Wandsworth Borough Council"}, {"id": 2618, "name": "Warrington Borough Council"}, {"id": 2460, "name": "Warwick District Council"}, {"id": 2243, "name": "Warwickshire County Council"}, {"id": 2346, "name": "Watford Borough Council"}, {"id": 2447, "name": "Waverley Borough Council"}, {"id": 2306, "name": "Wealden District Council"}, {"id": 2344, "name": "Welwyn Hatfield Borough Council"}, {"id": 2619, "name": "West Berkshire Council"}, {"id": 2288, "name": "West Devon Borough Council"}, {"id": 2620, "name": "West Dunbartonshire Council"}, {"id": 2360, "name": "West Lancashire Borough Council"}, {"id": 2379, "name": "West Lindsey District Council"}, {"id": 2621, "name": "West Lothian Council"}, {"id": 2420, "name": "West Oxfordshire District Council"}, {"id": 2244, "name": "West Sussex County Council"}, {"id": 2504, "name": "Westminster City Council"}, {"id": 2547, "name": "Wigan Borough Council"}, {"id": 2245, "name": "Wiltshire Council"}, {"id": 2331, "name": "Winchester City Council"}, {"id": 2622, "name": "Windsor and Maidenhead Council"}, {"id": 2548, "name": "Wirral Borough Council"}, {"id": 2449, "name": "Woking Borough Council"}, {"id": 2623, "name": "Wokingham Borough Council"}, {"id": 2478, "name": "Worcester City Council"}, {"id": 2246, "name": "Worcestershire County Council"}, {"id": 2468, "name": "Worthing Borough Council"}, {"id": 2624, "name": "Wrexham Council"}, {"id": 2476, "name": "Wychavon District Council"}, {"id": 2367, "name": "Wyre Borough Council"}, {"id": 2475, "name": "Wyre Forest District Council"}, {"id": 2625, "name": "York City Council"}];
+// ---- CONFIG: after you deploy the Cloudflare Worker, put its URL here ----
+const WORKER_URL = "https://blue-mud-c4afstreet-reports-relay.shuterpaul.workers.dev/around";
+const RELAY = (location.hostname==="localhost"||location.hostname==="127.0.0.1")
+  ? "http://localhost:8138/around"   // local test relay
+  : WORKER_URL;
+const PAGE_CAP = 60;                  // safety: 60 pages = up to 6,000 reports
+const $ = id => document.getElementById(id);
+
+// populate council dropdown
+const sel = $("council");
+for (const c of COUNCILS){ const o=document.createElement("option"); o.value=c.id; o.textContent=c.name; sel.appendChild(o); }
+
+// --- helpers ---
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
+function haversine(a,b,c,d){const R=6371,r=Math.PI/180;
+  const x=Math.sin((c-a)*r/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin((d-b)*r/2)**2;
+  return 2*R*Math.asin(Math.sqrt(x));}
+function bboxAround(lat,lon,km){const dLat=km/111,dLon=km/(111*Math.cos(lat*Math.PI/180));
+  return [lon-dLon,lat-dLat,lon+dLon,lat+dLat];} // W,S,E,N
+
+const MON={jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+function parseReported(txt){
+  // FixMyStreet shows the REPORTED time first, e.g. "09:14, 31 May 2022".
+  const m=/(\d{1,2}):(\d{2}),\s*(\d{1,2})\s+([A-Za-z]{3})[A-Za-z]*\s+(\d{4})/.exec(txt);
+  if(m) return Date.UTC(+m[5],MON[m[4].toLowerCase()],+m[3],+m[1],+m[2]);
+  return Date.now(); // relative ("today"/weekday) => reported very recently
+}
+function norm(s){return (s||"").toLowerCase().replace(/[^a-z0-9]+/g," ")
+  .split(" ").filter(w=>w&&!["council","county","borough","district","city","of","the","corporation","and","royal"].includes(w)).join(" ").trim();}
+function matchCouncil(names){for(const n of names){if(!n)continue;const q=norm(n);
+  const hit=COUNCILS.find(c=>norm(c.name)===q); if(hit)return hit;} return null;}
+
+// Turn one /around page (pins + reports_list HTML) into report objects.
+function parsePage(d){
+  const dateById={};
+  const re=/data-report-id="(\d+)"[\s\S]*?<small>([\s\S]*?)<\/small>/g; let m;
+  while((m=re.exec(d.reports_list||""))){ dateById[m[1]]=parseReported(m[2].replace(/<[^>]+>/g," ")); }
+  return (d.pins||[]).map(p=>({lat:+p[0],lon:+p[1],id:p[3],title:p[4]||"",
+    reported: dateById[p[3]] ?? Date.now()}));
+}
+
+// Page through the geographic feed (via the relay) for a bounding box.
+async function fetchPage(bbox,p){
+  const u=`${RELAY}?bbox=${bbox.map(n=>n.toFixed(5)).join(",")}&status=open&show_old_reports=1&p=${p}`;
+  const res=await fetch(u);
+  if(!res.ok) throw new Error("Relay/FixMyStreet error "+res.status);
+  return res.json();
+}
+async function fetchArea(bbox,onProg){
+  const byId=new Map();
+  // Page 1 tells us the total; the rest we fetch in parallel batches.
+  const first=await fetchPage(bbox,1);
+  const mm=/of\s+(\d+)/.exec(first.pagination||""); const total=mm?+mm[1]:0;
+  for(const r of parsePage(first)) byId.set(r.id,r);
+  onProg(byId.size,total);
+  const lastPage=Math.min(PAGE_CAP,Math.max(1,Math.ceil(total/100)));
+  const BATCH=5;                              // 5 pages at a time — quick but polite
+  for(let p=2;p<=lastPage;p+=BATCH){
+    const batch=[];
+    for(let q=p;q<Math.min(p+BATCH,lastPage+1);q++) batch.push(fetchPage(bbox,q));
+    for(const d of await Promise.all(batch)) for(const r of parsePage(d)) byId.set(r.id,r);
+    onProg(byId.size,total);
+  }
+  return {reports:[...byId.values()],total,capped:lastPage>=PAGE_CAP && total>PAGE_CAP*100};
+}
+
+const BUCKETS=[["Under 1 month",0,30,""],["1–3 months",30,90,""],["3–6 months",90,180,"mid"],
+  ["6–12 months",180,365,"mid"],["1–2 years",365,730,"old"],["Over 2 years",730,1e9,"old"]];
+
+function render(reports, scope){
+  const now=Date.now();
+  const A=reports.map(r=>({r,age:Math.floor((now-r.reported)/864e5)}))
+    .filter(x=>x.age>=0).sort((a,b)=>b.age-a.age);
+  $("openCount").textContent=A.length.toLocaleString();
+  $("scopeLabel").textContent="open reports "+scope;
+  $("over1y").textContent=A.filter(x=>x.age>365).length;
+  $("over6m").textContent=A.filter(x=>x.age>180).length;
+  $("avgWait").textContent=A.length?Math.round(A.reduce((s,x)=>s+x.age,0)/A.length):0;
+
+  const max=Math.max(1,...BUCKETS.map(([,lo,hi])=>A.filter(x=>x.age>=lo&&x.age<hi).length));
+  $("chart").innerHTML=BUCKETS.map(([lbl,lo,hi,cls])=>{
+    const n=A.filter(x=>x.age>=lo&&x.age<hi).length;
+    return `<div class="b ${cls}"><span>${lbl}</span><i style="width:${n/max*100}%"></i><b>${n}</b></div>`;
+  }).join("");
+
+  const esc=s=>(s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+  function draw(q){
+    q=q.toLowerCase();
+    const rows=A.filter(x=>!q||(x.r.title||"").toLowerCase().includes(q)).slice(0,400);
+    $("list").innerHTML=rows.map(({r,age})=>{
+      const cls=age>365?"old":age>180?"mid":"";
+      const pill=age>180?`<span class="pill ${cls}">${age>365?Math.floor(age/365)+"y":Math.floor(age/30)+"mo"} waiting</span>`:"";
+      const url=`https://www.fixmystreet.com/report/${r.id}`;
+      const dstr=new Date(r.reported).toLocaleDateString("en-GB");
+      return `<div class="rep"><a href="${url}" target="_blank" rel="noopener">${esc(r.title)||"(report)"}</a>${pill}
+        <div class="meta">reported ${dstr} · ${age} days ago</div></div>`;
+    }).join("")||"<p class='hint'>No matching reports.</p>";
+  }
+  draw("");
+  $("search").oninput=e=>draw(e.target.value);
+}
+
+async function run(){
+  $("err").textContent=""; $("results").style.display="none";
+  const pc=$("postcode").value.trim();
+  const radius=parseFloat($("radius").value)||5;
+  let centre=null, scopeName="";
+
+  try{
+    if(pc){
+      const g=await fetch("https://api.postcodes.io/postcodes/"+encodeURIComponent(pc.replace(/\s+/g,"")));
+      if(!g.ok) throw new Error("Postcode not found — check it, or choose a council.");
+      const d=(await g.json()).result;
+      centre=[d.latitude,d.longitude];
+      const m=matchCouncil([d.admin_county,d.admin_district]); if(m) sel.value=String(m.id);
+      scopeName=`within ${radius} km of ${pc.toUpperCase()}`;
+    } else if(sel.value){
+      // Council chosen without a postcode: locate its area via OpenStreetMap.
+      const name=(COUNCILS.find(c=>String(c.id)===sel.value)||{}).name||"";
+      const q=name.replace(/\bCouncil\b/i,"").trim()+", UK";
+      const nm=await fetch("https://nominatim.openstreetmap.org/search?format=json&limit=1&q="+encodeURIComponent(q));
+      const arr=await nm.json();
+      if(!arr.length) throw new Error("Couldn't locate that council — please enter a postcode instead.");
+      centre=[+arr[0].lat,+arr[0].lon]; scopeName=`within ${radius} km of ${name.replace(/\bCouncil\b/i,"").trim()}`;
+    } else {
+      throw new Error("Enter a postcode, or choose a council.");
+    }
+
+    $("progress").style.display="block"; $("go").disabled=true;
+    const bbox=bboxAround(centre[0],centre[1],radius);
+    const {reports,capped}=await fetchArea(bbox,(got,tot)=>{
+      $("progbar").style.width=(tot?Math.min(98,got/tot*100):20)+"%";
+      $("progtext").textContent=`Fetching from FixMyStreet… ${got}${tot?" of "+tot:""} reports`;
+    });
+    $("progbar").style.width="100%";
+
+    // bbox is a square; trim to a true circle of the chosen radius
+    const scoped=reports.filter(r=>isFinite(r.lat)&&isFinite(r.lon)&&haversine(centre[0],centre[1],r.lat,r.lon)<=radius);
+    render(scoped,scopeName);
+    $("err").textContent = capped ? "Note: very large area — showing the first "+(PAGE_CAP*100).toLocaleString()+" reports." : "";
+    $("results").style.display="block";
+    $("results").scrollIntoView({behavior:"smooth"});
+  }catch(e){
+    $("err").textContent=e.message||String(e);
+  }finally{
+    $("progress").style.display="none"; $("go").disabled=false;
+  }
+}
+$("go").onclick=run;
+$("postcode").addEventListener("keydown",e=>{if(e.key==="Enter")run();});
+</script>
+</body>
+</html>
