@@ -18308,5 +18308,21 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"8336924": {
+"final_state": "No further action",
+"states": [
+"Investigating",
+"No further action"
+],
+"banner": "closed"
+},
+"9261541": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
