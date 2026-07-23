@@ -18354,5 +18354,43 @@
 "Closed"
 ],
 "banner": "closed"
+},
+"8837398": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"8891917": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9602086": {
+"final_state": "Closed",
+"states": [
+"Investigating",
+"Closed"
+],
+"banner": "closed"
+},
+"9815705": {
+"final_state": "Internal referral",
+"states": [
+"Internal referral"
+],
+"banner": "closed"
+},
+"9816857": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
 }
 }
