@@ -18424,5 +18424,40 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"8556726": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9781171": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
+},
+"9796107": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9808809": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
+},
+"9836700": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
 }
 }
