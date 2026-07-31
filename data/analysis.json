@@ -1,13 +1,13 @@
 {
- "generated": "2026-07-30T08:07:47.926767+00:00",
- "total": 3821,
- "open": 1441,
- "closed": 2380,
+ "generated": "2026-07-31T08:30:09.563606+00:00",
+ "total": 3816,
+ "open": 1438,
+ "closed": 2378,
  "age_buckets": {
-  "< 1 month": 95,
-  "1-3 months": 213,
-  "3-6 months": 280,
-  "6-12 months": 302,
+  "< 1 month": 94,
+  "1-3 months": 210,
+  "3-6 months": 285,
+  "6-12 months": 298,
   "over 1 year": 551
  },
  "median_days_to_close": 12.0,
@@ -15,597 +15,597 @@
   {
    "category": "Carriageway pothole",
    "open": 171,
-   "closed": 481,
-   "total": 652,
-   "median_open_age_days": 140
+   "closed": 480,
+   "total": 651,
+   "median_open_age_days": 141
   },
   {
    "category": "Other Highways issue",
    "open": 165,
    "closed": 165,
    "total": 330,
-   "median_open_age_days": 383
+   "median_open_age_days": 384
   },
   {
    "category": "Drain blocked",
-   "open": 113,
-   "closed": 111,
+   "open": 112,
+   "closed": 112,
    "total": 224,
-   "median_open_age_days": 257
+   "median_open_age_days": 258.0
   },
   {
    "category": "Litter Bin - Overflowing",
    "open": 90,
-   "closed": 27,
-   "total": 117,
-   "median_open_age_days": 119.0
+   "closed": 26,
+   "total": 116,
+   "median_open_age_days": 120.0
   },
   {
    "category": "Fly Tipping",
-   "open": 77,
+   "open": 78,
    "closed": 249,
-   "total": 326,
-   "median_open_age_days": 350
+   "total": 327,
+   "median_open_age_days": 340.0
   },
   {
    "category": "Carriageway surface problem",
-   "open": 76,
-   "closed": 133,
+   "open": 75,
+   "closed": 134,
    "total": 209,
-   "median_open_age_days": 164.0
+   "median_open_age_days": 161
   },
   {
    "category": "Overgrown Trees/Hedges",
-   "open": 66,
+   "open": 67,
    "closed": 92,
-   "total": 158,
-   "median_open_age_days": 354.5
+   "total": 159,
+   "median_open_age_days": 352
   },
   {
    "category": "Grass cutting problem",
    "open": 57,
    "closed": 10,
    "total": 67,
-   "median_open_age_days": 50
+   "median_open_age_days": 51
   },
   {
    "category": "Standing water on the highway",
-   "open": 37,
-   "closed": 37,
-   "total": 74,
-   "median_open_age_days": 257
+   "open": 35,
+   "closed": 38,
+   "total": 73,
+   "median_open_age_days": 258
   },
   {
    "category": "Sign missing/defective",
-   "open": 33,
-   "closed": 31,
+   "open": 34,
+   "closed": 30,
    "total": 64,
-   "median_open_age_days": 552
+   "median_open_age_days": 548.5
   },
   {
    "category": "Other Street Cleaning",
    "open": 29,
    "closed": 22,
    "total": 51,
-   "median_open_age_days": 134
+   "median_open_age_days": 135
   },
   {
    "category": "Footway surface problem",
    "open": 28,
    "closed": 50,
    "total": 78,
-   "median_open_age_days": 344.0
+   "median_open_age_days": 345.0
   },
   {
    "category": "Tree problem on an open space",
    "open": 26,
    "closed": 18,
    "total": 44,
-   "median_open_age_days": 293.5
+   "median_open_age_days": 294.5
   },
   {
    "category": "Street Light Out",
    "open": 25,
    "closed": 117,
    "total": 142,
-   "median_open_age_days": 493
+   "median_open_age_days": 494
   },
   {
    "category": "Flood",
    "open": 21,
    "closed": 40,
    "total": 61,
-   "median_open_age_days": 260
+   "median_open_age_days": 261
   },
   {
    "category": "Cultivating or Planting on a Verge",
    "open": 20,
    "closed": 17,
    "total": 37,
-   "median_open_age_days": 108.5
+   "median_open_age_days": 109.5
   },
   {
    "category": "Abandoned vehicle",
    "open": 20,
    "closed": 38,
    "total": 58,
-   "median_open_age_days": 289.0
+   "median_open_age_days": 290.0
   },
   {
    "category": "Litter bin problem",
    "open": 19,
    "closed": 18,
    "total": 37,
-   "median_open_age_days": 310
+   "median_open_age_days": 311
   },
   {
    "category": "Tree/Grass/Shrub Problem on a highway/verge",
    "open": 18,
-   "closed": 42,
-   "total": 60,
-   "median_open_age_days": 428.5
+   "closed": 40,
+   "total": 58,
+   "median_open_age_days": 429.5
   },
   {
    "category": "Litter",
    "open": 17,
    "closed": 26,
    "total": 43,
-   "median_open_age_days": 232
+   "median_open_age_days": 233
   },
   {
    "category": "Salt bins replenish",
    "open": 17,
-   "closed": 62,
-   "total": 79,
-   "median_open_age_days": 206
+   "closed": 60,
+   "total": 77,
+   "median_open_age_days": 207
   },
   {
    "category": "Other Traffic Signals issue",
    "open": 14,
    "closed": 14,
    "total": 28,
-   "median_open_age_days": 465.0
+   "median_open_age_days": 466.0
   },
   {
    "category": "Markings missing/defective",
    "open": 14,
    "closed": 8,
    "total": 22,
-   "median_open_age_days": 180.0
+   "median_open_age_days": 181.0
   },
   {
    "category": "Footway pothole",
    "open": 13,
    "closed": 35,
    "total": 48,
-   "median_open_age_days": 187
+   "median_open_age_days": 188
   },
   {
    "category": "Sign obscured",
    "open": 13,
    "closed": 5,
    "total": 18,
-   "median_open_age_days": 303
+   "median_open_age_days": 304
   },
   {
    "category": "Leaf clearance",
    "open": 12,
    "closed": 21,
    "total": 33,
-   "median_open_age_days": 545.5
+   "median_open_age_days": 546.5
   },
   {
    "category": "Street name plate problem",
    "open": 11,
    "closed": 7,
    "total": 18,
-   "median_open_age_days": 286
+   "median_open_age_days": 287
   },
   {
    "category": "Bollard missing/defective",
    "open": 10,
    "closed": 7,
    "total": 17,
-   "median_open_age_days": 390.0
+   "median_open_age_days": 391.0
   },
   {
    "category": "Verge/Visibility problem",
    "open": 10,
    "closed": 11,
    "total": 21,
-   "median_open_age_days": 268.5
+   "median_open_age_days": 269.5
   },
   {
    "category": "Encroachment of the Highways by Trees or Shrubs",
    "open": 10,
-   "closed": 38,
-   "total": 48,
-   "median_open_age_days": 424.5
+   "closed": 37,
+   "total": 47,
+   "median_open_age_days": 425.5
   },
   {
    "category": "Dead animal",
    "open": 9,
    "closed": 8,
    "total": 17,
-   "median_open_age_days": 341
+   "median_open_age_days": 342
   },
   {
    "category": "Ironwork defective",
    "open": 9,
    "closed": 25,
    "total": 34,
-   "median_open_age_days": 157
+   "median_open_age_days": 158
   },
   {
    "category": "Dog fouling",
    "open": 9,
    "closed": 17,
    "total": 26,
-   "median_open_age_days": 520
+   "median_open_age_days": 521
   },
   {
    "category": "Salt bins new",
    "open": 9,
-   "closed": 39,
-   "total": 48,
-   "median_open_age_days": 205
+   "closed": 41,
+   "total": 50,
+   "median_open_age_days": 206
   },
   {
    "category": "Ditch blocked",
    "open": 9,
    "closed": 4,
    "total": 13,
-   "median_open_age_days": 352
-  },
-  {
-   "category": "Grass problem",
-   "open": 7,
-   "closed": 6,
-   "total": 13,
-   "median_open_age_days": 436
+   "median_open_age_days": 353
   },
   {
    "category": "Illuminated Sign Out",
    "open": 7,
    "closed": 25,
    "total": 32,
-   "median_open_age_days": 191
+   "median_open_age_days": 192
   },
   {
    "category": "Kerb problem",
    "open": 7,
    "closed": 15,
    "total": 22,
-   "median_open_age_days": 120
+   "median_open_age_days": 121
   },
   {
    "category": "Loose chippings/debris in c/w",
    "open": 7,
    "closed": 12,
    "total": 19,
-   "median_open_age_days": 309
+   "median_open_age_days": 310
   },
   {
    "category": "Property flooding issue",
    "open": 7,
    "closed": 6,
    "total": 13,
-   "median_open_age_days": 599
+   "median_open_age_days": 600
+  },
+  {
+   "category": "Grass problem",
+   "open": 6,
+   "closed": 6,
+   "total": 12,
+   "median_open_age_days": 396.0
   },
   {
    "category": "Highway Boundary Query",
    "open": 6,
    "closed": 2,
    "total": 8,
-   "median_open_age_days": 432.0
+   "median_open_age_days": 433.0
   },
   {
    "category": "Lamp(s) out",
    "open": 6,
    "closed": 6,
    "total": 12,
-   "median_open_age_days": 504.5
+   "median_open_age_days": 505.5
   },
   {
    "category": "Overgrown weeds/vegetation from neighbouring property",
    "open": 6,
    "closed": 3,
    "total": 9,
-   "median_open_age_days": 377.5
+   "median_open_age_days": 378.5
   },
   {
    "category": "Barrier pedestrian defective",
    "open": 6,
    "closed": 8,
    "total": 14,
-   "median_open_age_days": 355.5
-  },
-  {
-   "category": "Flood water that has run off Land",
-   "open": 6,
-   "closed": 4,
-   "total": 10,
-   "median_open_age_days": 620.0
+   "median_open_age_days": 356.5
   },
   {
    "category": "Broken glass",
    "open": 6,
    "closed": 2,
    "total": 8,
-   "median_open_age_days": 267.5
+   "median_open_age_days": 268.5
   },
   {
    "category": "Play equipment issue",
    "open": 5,
    "closed": 6,
    "total": 11,
-   "median_open_age_days": 687
+   "median_open_age_days": 688
+  },
+  {
+   "category": "Flood water that has run off Land",
+   "open": 5,
+   "closed": 5,
+   "total": 10,
+   "median_open_age_days": 642
   },
   {
    "category": "Treatment request carriageway",
    "open": 5,
    "closed": 18,
    "total": 23,
-   "median_open_age_days": 205
+   "median_open_age_days": 206
   },
   {
    "category": "Mud on the Highway",
    "open": 5,
    "closed": 5,
    "total": 10,
-   "median_open_age_days": 173
+   "median_open_age_days": 174
   },
   {
    "category": "Ironwork high/low",
    "open": 4,
    "closed": 9,
    "total": 13,
-   "median_open_age_days": 575.5
+   "median_open_age_days": 577.0
   },
   {
    "category": "Street Lighting Other",
    "open": 4,
    "closed": 12,
    "total": 16,
-   "median_open_age_days": 637.0
+   "median_open_age_days": 638.0
   },
   {
    "category": "Illuminated Bollard Out",
    "open": 4,
    "closed": 1,
    "total": 5,
-   "median_open_age_days": 137.0
+   "median_open_age_days": 138.0
   },
   {
    "category": "Damaged equipment",
    "open": 4,
    "closed": 6,
    "total": 10,
-   "median_open_age_days": 534.0
+   "median_open_age_days": 535.0
   },
   {
    "category": "Watercourse",
    "open": 4,
    "closed": 8,
    "total": 12,
-   "median_open_age_days": 408.5
-  },
-  {
-   "category": "Dangerous Tree",
-   "open": 3,
-   "closed": 9,
-   "total": 12,
-   "median_open_age_days": 201
+   "median_open_age_days": 409.5
   },
   {
    "category": "Flower/Shrubs bed problem",
    "open": 3,
    "closed": 4,
    "total": 7,
-   "median_open_age_days": 722
+   "median_open_age_days": 723
+  },
+  {
+   "category": "Dangerous Tree",
+   "open": 3,
+   "closed": 8,
+   "total": 11,
+   "median_open_age_days": 202
   },
   {
    "category": "Graffiti",
    "open": 3,
    "closed": 7,
    "total": 10,
-   "median_open_age_days": 278
+   "median_open_age_days": 279
   },
   {
    "category": "Total failure",
    "open": 3,
    "closed": 8,
    "total": 11,
-   "median_open_age_days": 78
+   "median_open_age_days": 79
   },
   {
    "category": "Urination",
    "open": 3,
    "closed": 0,
    "total": 3,
-   "median_open_age_days": 97
+   "median_open_age_days": 98
   },
   {
    "category": "Illuminated Sign Damaged",
    "open": 3,
    "closed": 4,
    "total": 7,
-   "median_open_age_days": 423
+   "median_open_age_days": 424
   },
   {
    "category": "Other winter maintenance",
    "open": 3,
-   "closed": 5,
-   "total": 8,
-   "median_open_age_days": 540
+   "closed": 6,
+   "total": 9,
+   "median_open_age_days": 541
   },
   {
    "category": "Other Structure",
    "open": 3,
    "closed": 3,
    "total": 6,
-   "median_open_age_days": 436
+   "median_open_age_days": 437
   },
   {
    "category": "Treatment request footway",
    "open": 3,
    "closed": 9,
    "total": 12,
-   "median_open_age_days": 203
+   "median_open_age_days": 204
   },
   {
    "category": "Street Light Day Burning",
    "open": 3,
    "closed": 21,
    "total": 24,
-   "median_open_age_days": 486
+   "median_open_age_days": 487
   },
   {
    "category": "Stones/Bollards on the Verge",
    "open": 3,
    "closed": 3,
    "total": 6,
-   "median_open_age_days": 535
+   "median_open_age_days": 536
   },
   {
    "category": "Temporary Traffic Light Fault",
    "open": 2,
    "closed": 28,
    "total": 30,
-   "median_open_age_days": 485.5
+   "median_open_age_days": 486.5
   },
   {
    "category": "RTC Attendance",
    "open": 2,
    "closed": 7,
    "total": 9,
-   "median_open_age_days": 628.5
+   "median_open_age_days": 629.5
   },
   {
    "category": "Fuel Spillage",
    "open": 2,
    "closed": 7,
    "total": 9,
-   "median_open_age_days": 297.5
+   "median_open_age_days": 298.5
   },
   {
    "category": "Bridge",
    "open": 2,
    "closed": 2,
    "total": 4,
-   "median_open_age_days": 383.0
+   "median_open_age_days": 384.0
   },
   {
    "category": "Barrier vehicular defective",
    "open": 2,
    "closed": 4,
    "total": 6,
-   "median_open_age_days": 306.5
+   "median_open_age_days": 307.5
   },
   {
    "category": "Graffiti (Offensive)",
    "open": 1,
    "closed": 3,
    "total": 4,
-   "median_open_age_days": 56
+   "median_open_age_days": 57
   },
   {
    "category": "Syringes / Drug related litter",
    "open": 1,
    "closed": 0,
    "total": 1,
-   "median_open_age_days": 720
+   "median_open_age_days": 721
   },
   {
    "category": "Street Light Damaged",
    "open": 1,
    "closed": 14,
    "total": 15,
-   "median_open_age_days": 32
+   "median_open_age_days": 33
   },
   {
    "category": "Street Furniture",
    "open": 1,
    "closed": 1,
    "total": 2,
-   "median_open_age_days": 671
+   "median_open_age_days": 672
   },
   {
    "category": "Dog stray",
    "open": 1,
    "closed": 6,
    "total": 7,
-   "median_open_age_days": 120
+   "median_open_age_days": 121
   },
   {
    "category": "Standing water on land",
    "open": 1,
    "closed": 2,
    "total": 3,
-   "median_open_age_days": 275
+   "median_open_age_days": 276
   },
   {
    "category": "Street Light Flash/Flickering",
    "open": 1,
    "closed": 9,
    "total": 10,
-   "median_open_age_days": 601
+   "median_open_age_days": 602
   },
   {
    "category": "Street Light Burning Red",
    "open": 1,
    "closed": 0,
    "total": 1,
-   "median_open_age_days": 598
+   "median_open_age_days": 599
   },
   {
    "category": "Salt / Grit Bin Damaged",
    "open": 1,
    "closed": 10,
    "total": 11,
-   "median_open_age_days": 78
+   "median_open_age_days": 79
   },
   {
    "category": "Illuminated Bollard Top Missing",
    "open": 1,
    "closed": 1,
    "total": 2,
-   "median_open_age_days": 476
+   "median_open_age_days": 477
   },
   {
    "category": "Zebra Crossing Light Out",
    "open": 1,
    "closed": 0,
    "total": 1,
-   "median_open_age_days": 355
+   "median_open_age_days": 356
   },
   {
    "category": "Syringes / Needles / Drug related litter",
    "open": 1,
    "closed": 0,
    "total": 1,
-   "median_open_age_days": 342
+   "median_open_age_days": 343
   },
   {
    "category": "Zebra Crossing post Damaged",
    "open": 1,
    "closed": 1,
    "total": 2,
-   "median_open_age_days": 107
+   "median_open_age_days": 108
   },
   {
    "category": "Street light obscured by tree/hedge/vegetation",
    "open": 1,
    "closed": 0,
    "total": 1,
-   "median_open_age_days": 58
+   "median_open_age_days": 59
   },
   {
    "category": "Pedestrian push button not working",
    "open": 1,
    "closed": 1,
    "total": 2,
-   "median_open_age_days": 12
+   "median_open_age_days": 13
   },
   {
    "category": "Hanging Lantern",
@@ -701,16 +701,7 @@
  ],
  "roll_of_shame": [
   {
-   "days_open": 727,
-   "title": "Overgrown weeds encroaching on the footpath by Gatacre Sports Pavillions SY11 1DP",
-   "category": "Grass problem",
-   "url": "https://www.fixmystreet.com/report/6303424",
-   "reported": "2024-08-01",
-   "lat": "52.867151",
-   "long": "-3.054303"
-  },
-  {
-   "days_open": 727,
+   "days_open": 728,
    "title": "Zip wire is broken",
    "category": "Play equipment issue",
    "url": "https://www.fixmystreet.com/report/6306283",
@@ -719,7 +710,7 @@
    "long": "-3.040201"
   },
   {
-   "days_open": 726,
+   "days_open": 727,
    "title": "Uneven footpath is significant trip hazard",
    "category": "Footway surface problem",
    "url": "https://www.fixmystreet.com/report/6308705",
@@ -728,7 +719,7 @@
    "long": "-3.054951"
   },
   {
-   "days_open": 726,
+   "days_open": 727,
    "title": "Zig-Zags and Yellow Lines Missing",
    "category": "Sign missing/defective",
    "url": "https://www.fixmystreet.com/report/6309628",
@@ -737,7 +728,7 @@
    "long": "-3.053038"
   },
   {
-   "days_open": 725,
+   "days_open": 726,
    "title": "Flower beds",
    "category": "Flower/Shrubs bed problem",
    "url": "https://www.fixmystreet.com/report/6311294",
@@ -746,7 +737,7 @@
    "long": "-3.050587"
   },
   {
-   "days_open": 724,
+   "days_open": 725,
    "title": "Cars parked on road causing an obstruction",
    "category": "Other Highways issue",
    "url": "https://www.fixmystreet.com/report/6313991",
@@ -755,7 +746,7 @@
    "long": "-3.061004"
   },
   {
-   "days_open": 722,
+   "days_open": 723,
    "title": "Hedge, stinging nets making people walk in to the road",
    "category": "Overgrown Trees/Hedges",
    "url": "https://www.fixmystreet.com/report/6321576",
@@ -764,7 +755,7 @@
    "long": "-3.05866"
   },
   {
-   "days_open": 722,
+   "days_open": 723,
    "title": "Overgrown hedges",
    "category": "Flower/Shrubs bed problem",
    "url": "https://www.fixmystreet.com/report/6324367",
@@ -773,7 +764,7 @@
    "long": "-3.048856"
   },
   {
-   "days_open": 722,
+   "days_open": 723,
    "title": "Shrubs not maintained",
    "category": "Flower/Shrubs bed problem",
    "url": "https://www.fixmystreet.com/report/6325586",
@@ -782,7 +773,7 @@
    "long": "-3.067503"
   },
   {
-   "days_open": 721,
+   "days_open": 722,
    "title": "Hedge growth over path",
    "category": "Other Highways issue",
    "url": "https://www.fixmystreet.com/report/6326107",
@@ -791,7 +782,7 @@
    "long": "-3.040817"
   },
   {
-   "days_open": 721,
+   "days_open": 722,
    "title": "Hedge obstruction on footpath",
    "category": "Other Highways issue",
    "url": "https://www.fixmystreet.com/report/6326149",
@@ -800,7 +791,7 @@
    "long": "-3.039014"
   },
   {
-   "days_open": 721,
+   "days_open": 722,
    "title": "A fridge dumped in the field",
    "category": "Fly Tipping",
    "url": "https://www.fixmystreet.com/report/6327129",
@@ -809,7 +800,7 @@
    "long": "-3.080755"
   },
   {
-   "days_open": 721,
+   "days_open": 722,
    "title": "Garden waste",
    "category": "Fly Tipping",
    "url": "https://www.fixmystreet.com/report/6330256",
@@ -818,7 +809,7 @@
    "long": "-3.09366"
   },
   {
-   "days_open": 720,
+   "days_open": 721,
    "title": "On the footpath outside of 22 Ambleside Road, Oswestry SY11 2YJ",
    "category": "Syringes / Drug related litter",
    "url": "https://www.fixmystreet.com/report/6331757",
@@ -827,7 +818,7 @@
    "long": "-3.049894"
   },
   {
-   "days_open": 716,
+   "days_open": 718,
    "title": "Request to Plant Tree on Verge",
    "category": "Other Highways issue",
    "url": "https://www.fixmystreet.com/report/6344071",
@@ -836,7 +827,7 @@
    "long": "-3.060356"
   },
   {
-   "days_open": 716,
+   "days_open": 717,
    "title": "Large potholes formed around ironwork, now exposed.",
    "category": "Ironwork high/low",
    "url": "https://www.fixmystreet.com/report/6347415",
@@ -845,7 +836,7 @@
    "long": "-3.044148"
   },
   {
-   "days_open": 715,
+   "days_open": 716,
    "title": "Laurel Overgrown",
    "category": "Overgrown Trees/Hedges",
    "url": "https://www.fixmystreet.com/report/6352215",
@@ -854,7 +845,7 @@
    "long": "-3.049953"
   },
   {
-   "days_open": 713,
+   "days_open": 714,
    "title": "Road markings missing",
    "category": "Sign missing/defective",
    "url": "https://www.fixmystreet.com/report/6362463",
@@ -863,7 +854,7 @@
    "long": "-3.053557"
   },
   {
-   "days_open": 711,
+   "days_open": 712,
    "title": "Steps and grass area needs sorting",
    "category": "Grass problem",
    "url": "https://www.fixmystreet.com/report/6368062",
@@ -872,7 +863,7 @@
    "long": "-3.044038"
   },
   {
-   "days_open": 709,
+   "days_open": 710,
    "title": "SY11 1UA Walk through pathway between 46/44 Jasmin Gardens Oswestry very overgrown and coming into property owners garden, can we assess if this is Shropshire Council responsibility please, if so can this be looked at,",
    "category": "Tree problem on an open space",
    "url": "https://www.fixmystreet.com/report/6375250",
@@ -881,7 +872,7 @@
    "long": "-3.046912"
   },
   {
-   "days_open": 709,
+   "days_open": 710,
    "title": "Yellow lines need extending",
    "category": "Other Highways issue",
    "url": "https://www.fixmystreet.com/report/6375551",
@@ -890,7 +881,7 @@
    "long": "-3.044295"
   },
   {
-   "days_open": 706,
+   "days_open": 707,
    "title": "Urgent matter - public safety is at risk - abandoned disused caravan",
    "category": "Fly Tipping",
    "url": "https://www.fixmystreet.com/report/6385652",
@@ -899,7 +890,7 @@
    "long": "-3.041439"
   },
   {
-   "days_open": 706,
+   "days_open": 707,
    "title": "Caravan been dumped overnight",
    "category": "Abandoned vehicle",
    "url": "https://www.fixmystreet.com/report/6386559",
@@ -908,7 +899,7 @@
    "long": "-3.041622"
   },
   {
-   "days_open": 706,
+   "days_open": 707,
    "title": "Caravan dumped on highway verge.Verge Shropshire Council \u00e7oncern.",
    "category": "Fly Tipping",
    "url": "https://www.fixmystreet.com/report/6387643",
@@ -917,13 +908,22 @@
    "long": "-3.041436"
   },
   {
-   "days_open": 705,
+   "days_open": 706,
    "title": "Deep pothole",
    "category": "Carriageway pothole",
    "url": "https://www.fixmystreet.com/report/6392331",
    "reported": "2024-08-23",
    "lat": "52.846579",
    "long": "-3.004089"
+  },
+  {
+   "days_open": 704,
+   "title": "Out-of-date sign at junction of B4579 at A5 Mile End Roundabout into Oswestry",
+   "category": "Sign missing/defective",
+   "url": "https://www.fixmystreet.com/report/6396980",
+   "reported": "2024-08-25",
+   "lat": "52.850304",
+   "long": "-3.028947"
   }
  ],
  "duplicate_clusters": [
@@ -1694,24 +1694,6 @@
     "https://www.fixmystreet.com/report/7829422",
     "https://www.fixmystreet.com/report/8211947",
     "https://www.fixmystreet.com/report/8938423"
-   ]
-  },
-  {
-   "count": 4,
-   "open": 0,
-   "lat": "52.840925",
-   "long": "-3.056149",
-   "titles": [
-    "Grit bin",
-    "Pathway with overgrown hedge leaning onto it",
-    "Sy10 9nh lower Erw Wen",
-    "Sy10 9nh lower Erw Wen Morda"
-   ],
-   "urls": [
-    "https://www.fixmystreet.com/report/7647122",
-    "https://www.fixmystreet.com/report/8629789",
-    "https://www.fixmystreet.com/report/8655466",
-    "https://www.fixmystreet.com/report/8694244"
    ]
   },
   {
@@ -2838,6 +2820,22 @@
   },
   {
    "count": 3,
+   "open": 0,
+   "lat": "52.840925",
+   "long": "-3.056149",
+   "titles": [
+    "Grit bin",
+    "Pathway with overgrown hedge leaning onto it",
+    "Sy10 9nh lower Erw Wen Morda"
+   ],
+   "urls": [
+    "https://www.fixmystreet.com/report/7647122",
+    "https://www.fixmystreet.com/report/8629789",
+    "https://www.fixmystreet.com/report/8694244"
+   ]
+  },
+  {
+   "count": 3,
    "open": 2,
    "lat": "52.890286",
    "long": "-3.038604",
@@ -3135,22 +3133,6 @@
     "https://www.fixmystreet.com/report/8634056",
     "https://www.fixmystreet.com/report/8637430",
     "https://www.fixmystreet.com/report/8693770"
-   ]
-  },
-  {
-   "count": 3,
-   "open": 0,
-   "lat": "52.86427",
-   "long": "-3.052351",
-   "titles": [
-    "Big pile of loose dog poo on footpath",
-    "Grit bin sy11 1du",
-    "Salt/grit bin empty"
-   ],
-   "urls": [
-    "https://www.fixmystreet.com/report/8656604",
-    "https://www.fixmystreet.com/report/8823951",
-    "https://www.fixmystreet.com/report/9598563"
    ]
   },
   {
