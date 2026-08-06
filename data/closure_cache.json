@@ -18836,5 +18836,75 @@
 "Closed"
 ],
 "banner": "closed"
+},
+"9409607": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9471017": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9550597": {
+"final_state": "Internal referral",
+"states": [
+"Internal referral"
+],
+"banner": "closed"
+},
+"9560210": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9724205": {
+"final_state": "Internal referral",
+"states": [
+"Internal referral"
+],
+"banner": "closed"
+},
+"9729807": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9855359": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9865612": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
+},
+"9873638": {
+"final_state": "Internal referral",
+"states": [
+"Internal referral"
+],
+"banner": "closed"
+},
+"9884594": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
 }
 }
