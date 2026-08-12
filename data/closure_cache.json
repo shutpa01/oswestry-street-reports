@@ -19017,5 +19017,27 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"9888767": {
+"final_state": "Internal referral",
+"states": [
+"Internal referral"
+],
+"banner": "closed"
+},
+"9922073": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9922528": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"Investigating",
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
 }
 }
