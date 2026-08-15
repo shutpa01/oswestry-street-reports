@@ -19140,5 +19140,44 @@
 "No further action"
 ],
 "banner": "closed"
+},
+"7474171": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"7936117": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9313120": {
+"final_state": "Internal referral",
+"states": [
+"Internal referral"
+],
+"banner": "closed"
+},
+"9357893": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9553690": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
 }
 }
