@@ -19339,5 +19339,63 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"8612886": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"8612892": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"8915624": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9124713": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9135757": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9189010": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9541337": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed",
+"Open",
+"Action scheduled",
+"Open",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
