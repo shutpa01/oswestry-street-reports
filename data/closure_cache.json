@@ -19578,5 +19578,78 @@
 "Internal referral"
 ],
 "banner": "closed"
+},
+"8750625": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9758373": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"9868897": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"9978774": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"9980814": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9988371": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9988413": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9988418": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"10027364": {
+"final_state": "No further action",
+"states": [
+"Action scheduled",
+"No further action"
+],
+"banner": "closed"
+},
+"10029007": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
