@@ -19811,5 +19811,108 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"7297441": {
+"final_state": "Closed",
+"states": [
+"Investigating",
+"Closed"
+],
+"banner": "closed"
+},
+"9658500": {
+"final_state": "No further action",
+"states": [
+"Investigating",
+"No further action"
+],
+"banner": "closed"
+},
+"9704893": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9750740": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9792175": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9815466": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9913654": {
+"final_state": "Closed",
+"states": [
+"Investigating",
+"Closed"
+],
+"banner": "closed"
+},
+"9913754": {
+"final_state": "Closed",
+"states": [
+"Investigating",
+"Closed"
+],
+"banner": "closed"
+},
+"10012026": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10015179": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10025311": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"10078849": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10079008": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
