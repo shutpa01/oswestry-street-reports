@@ -19937,5 +19937,13 @@
 "not the council&#39;s responsibility"
 ],
 "banner": "closed"
+},
+"10059908": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"Investigating",
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
 }
 }
