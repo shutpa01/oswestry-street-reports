@@ -20001,5 +20001,12 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"10102133": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
 }
 }
