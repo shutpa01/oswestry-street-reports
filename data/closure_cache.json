@@ -20143,5 +20143,13 @@
 "not the council&#39;s responsibility"
 ],
 "banner": "closed"
+},
+"9404495": {
+"final_state": "No further action",
+"states": [
+"Investigating",
+"No further action"
+],
+"banner": "closed"
 }
 }
