@@ -20151,5 +20151,12 @@
 "No further action"
 ],
 "banner": "closed"
+},
+"7864470": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
 }
 }
