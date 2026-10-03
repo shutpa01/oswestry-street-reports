@@ -20753,5 +20753,19 @@
 "No further action"
 ],
 "banner": "closed"
+},
+"9755437": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"10183359": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
 }
 }
