@@ -20815,5 +20815,37 @@
 "No further action"
 ],
 "banner": "closed"
+},
+"8625209": {
+"final_state": "No further action",
+"states": [
+"Investigating",
+"No further action"
+],
+"banner": "closed"
+},
+"9392662": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9678526": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10203703": {
+"final_state": "Fixed,\n        22:51, Tuesday",
+"states": [
+"Fixed",
+"Fixed,\n        22:51, Tuesday"
+],
+"banner": "fixed"
 }
 }
