@@ -21256,5 +21256,12 @@
 "No further action"
 ],
 "banner": "closed"
+},
+"6877910": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
 }
 }
