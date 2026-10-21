@@ -21293,5 +21293,19 @@
 "not the council&#39;s responsibility"
 ],
 "banner": "closed"
+},
+"10090807": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"10224542": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
 }
 }
