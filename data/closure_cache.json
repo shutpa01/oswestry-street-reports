@@ -21558,5 +21558,46 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"8887668": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9355849": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10153295": {
+"final_state": "Fixed",
+"states": [
+"Fixed",
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10282870": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10283638": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
