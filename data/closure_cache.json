@@ -21723,5 +21723,20 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"10197001": {
+"final_state": "Internal referral",
+"states": [
+"Internal referral"
+],
+"banner": "closed"
+},
+"10298360": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
