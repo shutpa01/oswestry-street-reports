@@ -21760,5 +21760,42 @@
 "No further action"
 ],
 "banner": "closed"
+},
+"10258664": {
+"final_state": "Closed",
+"states": [
+"Investigating",
+"Open",
+"Closed"
+],
+"banner": "closed"
+},
+"10277480": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"10322145": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"10322555": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"10327249": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
 }
 }
