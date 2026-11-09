@@ -21864,5 +21864,13 @@
 "not the council&#39;s responsibility"
 ],
 "banner": "closed"
+},
+"10148614": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
