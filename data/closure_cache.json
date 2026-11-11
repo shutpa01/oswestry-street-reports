@@ -21926,5 +21926,20 @@
 "not the council&#39;s responsibility"
 ],
 "banner": "closed"
+},
+"10335573": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10346963": {
+"final_state": "Internal referral",
+"states": [
+"Internal referral"
+],
+"banner": "closed"
 }
 }
