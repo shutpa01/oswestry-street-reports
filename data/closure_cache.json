@@ -22022,5 +22022,38 @@
 "Closed"
 ],
 "banner": "closed"
+},
+"8750956": {
+"final_state": "Fixed",
+"states": [
+"Fixed",
+"Open",
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10144849": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10317713": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
+},
+"10326008": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
