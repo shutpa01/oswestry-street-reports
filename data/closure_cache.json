@@ -22055,5 +22055,51 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"10294647": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10335243": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10349392": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10357620": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"10362024": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10367744": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
 }
 }
