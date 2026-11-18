@@ -22177,5 +22177,148 @@
 "Closed"
 ],
 "banner": "closed"
+},
+"8000323": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"9520749": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9663176": {
+"final_state": "not the council&#39;s responsibility",
+"states": [
+"not the council&#39;s responsibility"
+],
+"banner": "closed"
+},
+"9902072": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"10124510": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10148565": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10148617": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10148636": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10148649": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10267448": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"10340476": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10364138": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10375177": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
+},
+"10375818": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
+},
+"10380358": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10381495": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"10382048": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
+},
+"10382798": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
+},
+"10385536": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
 }
 }
