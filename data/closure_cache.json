@@ -22320,5 +22320,65 @@
 "Closed"
 ],
 "banner": "closed"
+},
+"7820576": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"9286543": {
+"final_state": "Fixed",
+"states": [
+"Fixed"
+],
+"banner": "fixed"
+},
+"10195760": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10268116": {
+"final_state": "Closed",
+"states": [
+"Investigating",
+"Closed"
+],
+"banner": "closed"
+},
+"10359536": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10383562": {
+"final_state": "Closed",
+"states": [
+"Investigating",
+"Closed"
+],
+"banner": "closed"
+},
+"10389709": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
+},
+"10389863": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
 }
 }
