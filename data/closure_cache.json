@@ -22380,5 +22380,37 @@
 "Closed"
 ],
 "banner": "closed"
+},
+"8423517": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"8822318": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10370367": {
+"final_state": "Internal referral",
+"states": [
+"Investigating",
+"Open",
+"Internal referral"
+],
+"banner": "closed"
+},
+"10392925": {
+"final_state": "No further action",
+"states": [
+"No further action"
+],
+"banner": "closed"
 }
 }
