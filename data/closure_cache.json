@@ -22412,5 +22412,13 @@
 "No further action"
 ],
 "banner": "closed"
+},
+"9399310": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
 }
 }
