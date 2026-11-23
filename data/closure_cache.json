@@ -22420,5 +22420,20 @@
 "Fixed"
 ],
 "banner": "fixed"
+},
+"9173658": {
+"final_state": "Fixed",
+"states": [
+"Action scheduled",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10396580": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
 }
 }
