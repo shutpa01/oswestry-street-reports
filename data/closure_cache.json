@@ -22456,5 +22456,36 @@
 "No further action"
 ],
 "banner": "closed"
+},
+"10242187": {
+"final_state": "Fixed",
+"states": [
+"Investigating",
+"Fixed"
+],
+"banner": "fixed"
+},
+"10348760": {
+"final_state": "Closed",
+"states": [
+"Action scheduled",
+"Open",
+"Closed"
+],
+"banner": "closed"
+},
+"10416843": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
+},
+"10419388": {
+"final_state": "Closed",
+"states": [
+"Closed"
+],
+"banner": "closed"
 }
 }
